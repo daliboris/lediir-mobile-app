@@ -1,0 +1,34 @@
+<i>Elektronická lexikální databáze indoíránských jazyků, persko-český modul</i>
+
+<u>Tato verze aplikace je zkušební a je určena výhradně pro interní potřebu řešitelského týmu projektu.</u>
+
+
+Copyright © 2022, Sociologický ústav AV ČR, Filozofická fakulta UK
+
+Autorský tým: 
+
+SOÚ AV ČR: Darina Vystrčilová, Mona Khademi, Radka Taucová,
+FF UK: Zuzana Kříhová, Ľubomír Novák, Bořivoj Nachtmann
+
+Jazykové korektury češtiny: Kristýna Přibylová
+Odborný konzultant: Michal Škrabal
+Technická spolupráce: Boris Lehečka, Milan Paučula
+Vytvoření jazykových korpusů <i>Araneum Persicum</i>: Vladimír Benko
+Další spolupráce: Peter Fajnor, Martina Hartmannová, Filip Lachmann, Zuzana Řezníčková, Martin Vávra
+
+Lexikální databáze je zpracovávána v programu [FLEx](https://software.sil.org/fieldworks) (FieldWorks Language Explorer) společnosti [SIL International](https://www.sil.org).
+
+Tento slovník byl podpořen projektem TA ČR číslo [TL03000369](https://www.isvavai.cz/cep?ss=detail&n=0&h=TL03000369).
+
+Toto dílo podléhá licenci [Creative Commons Uveďte původ-Neužívejte komerčně-Nezpracovávejte 4.0 Mezinárodní License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+Copyright © 2022, Sociologický ústav AV ČR, Filozofická fakulta UK
+
+Webové [stránky projektu](https://eldi.soc.cas.cz) s detaily.
+
+V případě technických problémů s aplikací kontaktujte [Borise Lehečku](mailto:boris@daliboris.cz).
+
+
+<b>Jak citovat:</b> Darina Vystrčilová, Mona Khademi, Zuzana Kříhová et al.: Elektronická lexikální databáze indoíránských jazyků, persko-český modul. Praha 2022. Verze dat: 2022-11-01. Dostupné z WWW: <https://play.google.com/store/apps/details?id=cz.cas.soc.eldi.dictionary.facs&hl=cs>
+
+Aplikace: %app-name%, verze %version-name% (%program-type%), vytvořeno s pomocí programu [Dictionary App Builder](https://software.sil.org/dictionaryappbuilder/), verze %program-version%.

@@ -1,0 +1,1508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app-definition type="DAB" program-version="10.1">
+  <project-name>Persian-Czech Dictionary</project-name>
+  <project-description>Persko-český slovník, mobilní aplikace</project-description>
+  <project-group>LeDIIR</project-group>
+
+  <app-name lang="default">Persian-Czech Dictionary</app-name>
+  <app-name lang="cs">Persko-český slovník</app-name>
+  <apk-filename append-version="true">Persian-Czech_Dictionary.apk</apk-filename>
+  <package>cz.cas.soc.eldi.dictionary.facs</package>
+  <version code="2" name="2.0"/>
+  <multiple-apks value="false"/>
+  <android-sdk min="23"/>
+  <install-location value="preferExternal"/>
+  <ipa-filename append-version="true"></ipa-filename>
+  <ipa-version build="1" name="1.0"/>
+  <ipa-asset-filename></ipa-asset-filename>
+  <ipa-container-url></ipa-container-url>
+  <ipa-app-type>dedicated</ipa-app-type>
+  <ipa-container-audio>false</ipa-container-audio>
+
+  <lexicon-db type="lift">LeDIIR-FACS-mobile.lift</lexicon-db>
+  <source>V:\Projekty\Github\Daliboris\lediir\lift-to-tei\Dictionary\LeDIIR-FACS-mobile.lift</source>
+
+  <signing>
+    <keystore><!-- TODO: path to keystore file --></keystore>
+    <keystore-password><!-- TODO: keystore password  --></keystore-password>
+   <alias><!-- TODO: alias  --></alias>
+   <alias-password><!-- TODO: alias password  --></alias-password>
+  </signing>
+
+  <publishing mode="manual">
+  </publishing>
+
+  <about enabled="true">
+    <filename>about.txt</filename>
+  </about>
+
+  <analytics enabled="false">
+  </analytics>
+
+  <audio-sources>
+  </audio-sources>
+
+  <deep-linking enabled="false">
+  </deep-linking>
+
+  <expiry type="none">
+    <filename>expiry.txt</filename>
+  </expiry>
+
+  <features type="main">
+    <feature name="app-layout-direction" value="text"/>
+    <feature name="search" value="true"/>
+    <feature name="replace-underscore-space" value="true"/>
+    <feature name="omit-index-items-starting-with" value="true"/>
+    <feature name="omit-index-items-starting-with-chars" value="? ( ) [ ] &quot; , ; * @ # | { }"/>
+    <feature name="omit-index-items-starting-with-digit" value="true"/>
+    <feature name="omit-index-items-longer-than" value="true"/>
+    <feature name="omit-index-items-longer-than-number" value="30"/>
+    <feature name="modify-single-entry-styles" value="true"/>
+    <feature name="summary-gloss-part-of-speech" value="true"/>
+    <feature name="audio-search-all" value="true"/>
+    <feature name="audio-access-method" value="stream"/>
+    <feature name="audio-download-mode" value="auto"/>
+    <feature name="text-font-size-slider" value="true"/>
+    <feature name="text-line-height-slider" value="false"/>
+    <feature name="splash-screen" value="false"/>
+    <feature name="splash-screen-duration" value="800"/>
+    <feature name="splash-screen-ios" value="false"/>
+    <feature name="splash-screen-duration-ios" value="800"/>
+    <feature name="show-illustrations" value="true"/>
+    <feature name="resize-illustrations" value="true"/>
+    <feature name="resize-illustrations-width" value="480"/>
+    <feature name="share-app-link" value="false"/>
+    <feature name="share-apk-file" value="true"/>
+    <feature name="settings-interface-language" value="true"/>
+    <feature name="settings-keep-screen-on" value="true"/>
+    <feature name="settings-share-usage-data" value="true"/>
+    <feature name="settings-audio-download-mode" value="true"/>
+    <feature name="settings-audio-access-method" value="true"/>
+    <feature name="settings-app-layout-direction" value="true"/>
+  </features>
+
+  <firebase>
+
+    <features type="firebase">
+      <feature name="firebase-analytics" value="false"/>
+    </features>
+  </firebase>
+
+  <fonts>
+    <font-handling>
+      <viewer type="default"/>
+      <grandroid enabled="false"/>
+    </font-handling>
+
+    <font family="font-cs-CZ">
+      <font-name>Kurinto Text</font-name>
+      <display-name>Kurinto Text</display-name>
+      <filename format="truetype">KurintoText-Rg.ttf</filename>
+      <style-decl property="font-weight" value="normal"/>
+      <style-decl property="font-style" value="normal"/>
+    </font>
+    <font family="font-en">
+      <font-name>Kurinto Text</font-name>
+      <display-name>Kurinto Text</display-name>
+      <filename format="truetype">KurintoText-Rg.ttf</filename>
+      <style-decl property="font-weight" value="normal"/>
+      <style-decl property="font-style" value="normal"/>
+    </font>
+    <font family="font-fa">
+      <font-name>Kurinto Text</font-name>
+      <display-name>Kurinto Text</display-name>
+      <filename format="truetype">KurintoText-Rg.ttf</filename>
+      <style-decl property="font-weight" value="normal"/>
+      <style-decl property="font-style" value="normal"/>
+    </font>
+    <font family="font1">
+      <font-name>DejaVu Sans Condensed</font-name>
+      <display-name>DejaVu Sans Condensed</display-name>
+      <filename format="truetype">DejaVuSansCondensed.ttf</filename>
+      <style-decl property="font-weight" value="normal"/>
+      <style-decl property="font-style" value="normal"/>
+    </font>
+    <font family="font1">
+      <font-name>DejaVu Sans Condensed Bold</font-name>
+      <display-name>DejaVu Sans Condensed</display-name>
+      <filename format="truetype">DejaVuSansCondensed-Bold.ttf</filename>
+      <style-decl property="font-weight" value="bold"/>
+      <style-decl property="font-style" value="normal"/>
+    </font>
+  </fonts>
+
+  <color-scheme name="Indigo"/>
+
+  <color-themes>
+    <color-theme name="Normal" enabled="true" default="true"/>
+    <color-theme name="Sepia" enabled="true"/>
+    <color-theme name="Dark" enabled="true"/>
+  </color-themes>
+
+  <colors type="main">
+    <color name="PrimaryColor">
+      <color-mapping theme="Normal" value="#3F51B5"/>
+      <color-mapping theme="Sepia" value="#4E342E"/>
+      <color-mapping theme="Dark" value="#181818"/>
+    </color>
+    <color name="PrimaryDarkColor">
+      <color-mapping theme="Normal" value="#303F9F"/>
+      <color-mapping theme="Sepia" value="#3E2723"/>
+      <color-mapping theme="Dark" value="#121212"/>
+    </color>
+    <color name="AccentColor">
+      <color-mapping theme="Normal" value="#FF5252"/>
+      <color-mapping theme="Sepia" value="#3E2723"/>
+      <color-mapping theme="Dark" value="#121212"/>
+    </color>
+    <color name="ActionBarColor">
+      <color-mapping theme="Normal" value="PrimaryColor"/>
+      <color-mapping theme="Sepia" value="PrimaryColor"/>
+      <color-mapping theme="Dark" value="PrimaryColor"/>
+    </color>
+    <color name="StatusBarColor">
+      <color-mapping theme="Normal" value="PrimaryDarkColor"/>
+      <color-mapping theme="Sepia" value="PrimaryDarkColor"/>
+      <color-mapping theme="Dark" value="PrimaryDarkColor"/>
+    </color>
+    <color name="TextColor">
+      <color-mapping theme="Normal" value="#000000"/>
+      <color-mapping theme="Sepia" value="#5A4129"/>
+      <color-mapping theme="Dark" value="#E0E0E0"/>
+    </color>
+    <color name="BackgroundColor">
+      <color-mapping theme="Normal" value="#F0F0F0"/>
+      <color-mapping theme="Sepia" value="#E9D8BA"/>
+      <color-mapping theme="Dark" value="#000000"/>
+    </color>
+    <color name="TitleBackgroundColor">
+      <color-mapping theme="Normal" value="#C5CAE9"/>
+      <color-mapping theme="Sepia" value="#E9D8BA"/>
+      <color-mapping theme="Dark" value="#303030"/>
+    </color>
+    <color name="TabBackgroundColor">
+      <color-mapping theme="Normal" value="#C5CAE9"/>
+      <color-mapping theme="Sepia" value="#E9D8BA"/>
+      <color-mapping theme="Dark" value="#303030"/>
+    </color>
+    <color name="TabTextColor">
+      <color-mapping theme="Normal" value="#000000"/>
+      <color-mapping theme="Sepia" value="#5A4129"/>
+      <color-mapping theme="Dark" value="#E0E0E0"/>
+    </color>
+    <color name="DialogBackgroundColor">
+      <color-mapping theme="Normal" value="#F0F0F0"/>
+      <color-mapping theme="Sepia" value="#E9D8BA"/>
+      <color-mapping theme="Dark" value="#202020"/>
+    </color>
+    <color name="PopupBackgroundColor">
+      <color-mapping theme="Normal" value="#E6E6E6"/>
+      <color-mapping theme="Sepia" value="#E9D8BA"/>
+      <color-mapping theme="Dark" value="#101010"/>
+    </color>
+    <color name="DialogButtonColor">
+      <color-mapping theme="Normal" value="PrimaryColor"/>
+      <color-mapping theme="Sepia" value="PrimaryColor"/>
+      <color-mapping theme="Dark" value="#E0E0E0"/>
+    </color>
+    <color name="TextHighlightColor">
+      <color-mapping theme="Normal" value="#D9D9D9"/>
+      <color-mapping theme="Sepia" value=""/>
+      <color-mapping theme="Dark" value="#404040"/>
+    </color>
+    <color name="LinkColor">
+      <color-mapping theme="Normal" value="#1A237E"/>
+      <color-mapping theme="Sepia" value="#513A24"/>
+      <color-mapping theme="Dark" value="#C5CAE9"/>
+    </color>
+    <color name="ShareButtonColor">
+      <color-mapping theme="Normal" value="PrimaryColor"/>
+      <color-mapping theme="Sepia" value="PrimaryColor"/>
+      <color-mapping theme="Dark" value="PrimaryColor"/>
+    </color>
+    <color name="ShareButtonTextColor">
+      <color-mapping theme="Normal" value="#FFFFFF"/>
+      <color-mapping theme="Sepia" value="#FFFFFF"/>
+      <color-mapping theme="Dark" value="#FFFFFF"/>
+    </color>
+    <color name="DrawerBackgroundColor">
+      <color-mapping theme="Normal" value="#FFFFFF"/>
+      <color-mapping theme="Sepia" value="#E9D8BA"/>
+      <color-mapping theme="Dark" value="#101010"/>
+    </color>
+    <color name="DrawerItemTextColor">
+      <color-mapping theme="Normal" value="#212121"/>
+      <color-mapping theme="Sepia" value="#212121"/>
+      <color-mapping theme="Dark" value="#D0D0D0"/>
+    </color>
+    <color name="DrawerItemIconColor">
+      <color-mapping theme="Normal" value="#757575"/>
+      <color-mapping theme="Sepia" value="#757575"/>
+      <color-mapping theme="Dark" value="#C0C0C0"/>
+    </color>
+    <color name="TextColor1">
+      <color-mapping theme="Normal" value="#000080"/>
+      <color-mapping theme="Sepia" value="#000080"/>
+      <color-mapping theme="Dark" value="#00FFFF"/>
+    </color>
+    <color name="TextColor2">
+      <color-mapping theme="Normal" value="#800000"/>
+      <color-mapping theme="Sepia" value="#800000"/>
+      <color-mapping theme="Dark" value="#800000"/>
+    </color>
+    <color name="TextColor3">
+      <color-mapping theme="Normal" value="#008000"/>
+      <color-mapping theme="Sepia" value="#008000"/>
+      <color-mapping theme="Dark" value="#008000"/>
+    </color>
+    <color name="TextColor4">
+      <color-mapping theme="Normal" value="#800080"/>
+      <color-mapping theme="Sepia" value="#800080"/>
+      <color-mapping theme="Dark" value="#800080"/>
+    </color>
+    <color name="TextColor5">
+      <color-mapping theme="Normal" value="#0000FF"/>
+      <color-mapping theme="Sepia" value="#0000FF"/>
+      <color-mapping theme="Dark" value="#FFFFFF"/>
+    </color>
+    <color name="TextColor6">
+      <color-mapping theme="Normal" value="#FF0000"/>
+      <color-mapping theme="Sepia" value="#FF0000"/>
+      <color-mapping theme="Dark" value="#FFFFFF"/>
+    </color>
+    <color name="TextColor7">
+      <color-mapping theme="Normal" value="#0000FF"/>
+      <color-mapping theme="Sepia" value="#0000FF"/>
+      <color-mapping theme="Dark" value="#FFFFFF"/>
+    </color>
+    <color name="TextColor8">
+      <color-mapping theme="Normal" value="#0000FF"/>
+      <color-mapping theme="Sepia" value="#0000FF"/>
+      <color-mapping theme="Dark" value="#FFFFFF"/>
+    </color>
+    <color name="SearchTextColor">
+      <color-mapping theme="Normal" value="#000000"/>
+      <color-mapping theme="Sepia" value="#000000"/>
+      <color-mapping theme="Dark" value="#E0E0E0"/>
+    </color>
+    <color name="SearchButtonColor">
+      <color-mapping theme="Normal" value="#505050"/>
+      <color-mapping theme="Sepia" value="#505050"/>
+      <color-mapping theme="Dark" value="#505050"/>
+    </color>
+    <color name="SearchButtonTextColor">
+      <color-mapping theme="Normal" value="#FFFFFF"/>
+      <color-mapping theme="Sepia" value="#FFFFFF"/>
+      <color-mapping theme="Dark" value="#FFFFFF"/>
+    </color>
+    <color name="SearchProgressButtonColor">
+      <color-mapping theme="Normal" value="#A0A0A0"/>
+      <color-mapping theme="Sepia" value="#A0A0A0"/>
+      <color-mapping theme="Dark" value="#A0A0A0"/>
+    </color>
+    <color name="SearchProgressButtonTextColor">
+      <color-mapping theme="Normal" value="#FFFFFF"/>
+      <color-mapping theme="Sepia" value="#FFFFFF"/>
+      <color-mapping theme="Dark" value="#FFFFFF"/>
+    </color>
+    <color name="SettingsTitleColor">
+      <color-mapping theme="Normal" value="#000000"/>
+      <color-mapping theme="Sepia" value="#000000"/>
+      <color-mapping theme="Dark" value="#E0E0E0"/>
+    </color>
+    <color name="SettingsSummaryColor">
+      <color-mapping theme="Normal" value="#606060"/>
+      <color-mapping theme="Sepia" value="#606060"/>
+      <color-mapping theme="Dark" value="#B0B0B0"/>
+    </color>
+    <color name="SettingsSeparatorColor">
+      <color-mapping theme="Normal" value="#E0E0E0"/>
+      <color-mapping theme="Sepia" value="#C9C2C0"/>
+      <color-mapping theme="Dark" value="#404040"/>
+    </color>
+  </colors>
+
+  <styles>
+    <style name="ui.alphabet-button-en" category="ui">
+      <style-decl property="font-family" value="font-en"/>
+      <style-decl property="font-size" value="15sp"/>
+      <style-decl property="font-weight" value="bold"/>
+      <style-decl property="text-transform" value="uppercase"/>
+    </style>
+    <style name="ui.alphabet-button-cs-CZ" category="ui">
+      <style-decl property="font-family" value="font-cs-CZ"/>
+      <style-decl property="font-size" value="15sp"/>
+      <style-decl property="font-weight" value="bold"/>
+      <style-decl property="text-transform" value="uppercase"/>
+    </style>
+  </styles>
+
+
+  <writing-systems>
+    <writing-system code="fa" type="main|gloss">
+      <display-names>
+        <form lang="default">Persian</form>
+        <form lang="cs">Perština</form>
+      </display-names>
+      <font-family>font-fa</font-family>
+      <trait name="text-direction" value="RTL"/>
+      <trait name="indexed" value="false"/>
+      <sort-method type="icu-rules">
+        <ignore-chars>- = ~ * ( ) [ ] ¡ ¿</ignore-chars>
+        <rules>&amp;ا &lt; آ &lt; اً &lt; أ &lt; إ &lt; اَ &lt; اٍ &lt; اُ &lt; اْ &lt; اٰ &lt; اٌ
+&amp;ک &lt; ك
+&amp;و &lt; و &lt; ؤ &lt; ـو
+&amp;ه &lt; ۀ &lt; ة
+&amp;ی &lt; ي &lt; ى &lt; ي &lt; ئ</rules>
+      </sort-method>
+      <alphabet>ا ب پ ت ث ج چ ح خ د ذ ر ز ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن و ه ی</alphabet>
+    </writing-system>
+
+    <writing-system code="en" type="main|gloss">
+      <display-names>
+        <form lang="default">English</form>
+        <form lang="cs">Angličtina</form>
+      </display-names>
+      <font-family>font-en</font-family>
+      <trait name="text-direction" value="LTR"/>
+      <trait name="indexed" value="true"/>
+      <sort-method type="default">
+        <ignore-chars>- = ~ * ( ) [ ] ¡ ¿</ignore-chars>
+      </sort-method>
+      <alphabet>a b c d e f g h i j k l m n o p q r s t u v w x y z</alphabet>
+    </writing-system>
+
+    <writing-system code="cs-CZ" type="gloss">
+      <display-names>
+        <form lang="default">Czech</form>
+        <form lang="cs">Čeština</form>
+      </display-names>
+      <font-family>font-cs-CZ</font-family>
+      <trait name="text-direction" value="LTR"/>
+      <trait name="indexed" value="true"/>
+      <sort-method type="default">
+        <ignore-chars>- = ~ * ( ) [ ] ¡ ¿</ignore-chars>
+      </sort-method>
+      <alphabet>a b c č d e f g h ch i j k l m n o p q r ř s š t u v w x y z ž</alphabet>
+
+      <features type="writing-system">
+        <feature name="summary-gloss" value="true"/>
+      </features>
+    </writing-system>
+  </writing-systems>
+
+  <fields>
+    <field  type="complex" name="Arabic compound" show="true">
+      <label show="true">
+        <translation lang="default">Arabic compound:</translation>
+        <translation lang="cs">Arabské kompozitum:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="complex" name="Collocate" show="true">
+      <label show="true">
+        <translation lang="default">Collocate:</translation>
+        <translation lang="cs">Kolokace:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="complex" name="Complex predicate / Compound Verb" show="true">
+      <label show="true">
+        <translation lang="default">Complex predicate / Compound Verb:</translation>
+        <translation lang="cs">Komplexní predikát / složené sloveso:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="complex" name="Compound" show="true">
+      <label show="true">
+        <translation lang="default">Compound:</translation>
+        <translation lang="cs">Kompozitum:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="complex" name="Derivative" show="true">
+      <label show="true">
+        <translation lang="default">Derivative:</translation>
+        <translation lang="cs">Derivace:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="complex" name="Idiom" show="true">
+      <label show="true">
+        <translation lang="default">Idiom:</translation>
+        <translation lang="cs">Idiom:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="complex" name="Unspecified Complex Form" show="true">
+      <label show="true">
+        <translation lang="default">Unspecified Complex Form:</translation>
+        <translation lang="cs">Nespecifikovaný komplexní tvar:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="field" name="Domain" show="true">
+      <label show="true">
+        <translation lang="default">Domain:</translation>
+        <translation lang="cs">Doména:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="field" name="Frekvency" show="true">
+      <label show="true">
+        <translation lang="default">Frequency:</translation>
+        <translation lang="cs">Frekvence:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="field" name="languagenotes" show="false">
+      <label show="true">
+        <translation lang="default">Languagenotes:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="field" name="summary" show="false">
+      <label show="true">
+        <translation lang="default">Summary:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="note" name="anthropology" show="false">
+      <label show="true">
+        <translation lang="default">Anthropology:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="note" name="encyclopedic" show="false">
+      <label show="false">
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="note" name="grammar" show="true">
+      <label show="true">
+        <translation lang="default">Grammar:</translation>
+        <translation lang="cs">Gramatika:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="note" name="reference" show="true">
+      <label show="true">
+        <translation lang="default">Reference:</translation>
+        <translation lang="cs">Viz:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="note" name="semantics" show="false">
+      <label show="true">
+        <translation lang="default">Semantics:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="note" name="sociolinguistics" show="false">
+      <label show="true">
+        <translation lang="default">Sociolinguistics:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="pronunciation" show="true">
+      <label show="true">
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="relation" name="Antonym" show="true">
+      <label show="true">
+        <translation lang="default">Antonym:</translation>
+        <translation lang="cs">Antonymum:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="relation" name="Compare" show="true">
+      <label show="true">
+        <translation lang="default">Compare:</translation>
+        <translation lang="cs">Srovnej:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="relation" name="Generic" show="true">
+      <label show="true">
+        <translation lang="default">Generic:</translation>
+        <translation lang="cs">Obecný:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="relation" name="Opposite Verb Genus" show="true">
+      <label show="true">
+        <translation lang="default">Opposite Verb Genus:</translation>
+        <translation lang="cs">Rodový protějšek:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="relation" name="Specific" show="true">
+      <label show="true">
+        <translation lang="default">Specific:</translation>
+        <translation lang="cs">Specifický:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="relation" name="Synonyms" show="true">
+      <label show="true">
+        <translation lang="default">Synonyms:</translation>
+        <translation lang="cs">Synonyma:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="variant" name="(Default)" show="true">
+      <label show="true">
+        <translation lang="default">Variant:</translation>
+        <translation lang="cs">Varianta:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="variant" name="Alternative light verb" show="true">
+      <label show="true">
+        <translation lang="default">Alternative light verb:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="variant" name="Alternative Preposition" show="true">
+      <label show="true">
+        <translation lang="default">Alternative Preposition:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="variant" name="Arabic plural" show="true">
+      <label show="true">
+        <translation lang="default">Arabic plural:</translation>
+        <translation lang="cs">Arabský plurál:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="variant" name="Colloquial" show="true">
+      <label show="true">
+        <translation lang="default">Colloquial:</translation>
+        <translation lang="cs">Hovorová varianta:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="variant" name="Plural" show="true">
+      <label show="true">
+        <translation lang="default">Plural:</translation>
+        <translation lang="cs">Plurál:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="variant" name="Present" show="true">
+      <label show="true">
+        <translation lang="default">Present:</translation>
+        <translation lang="cs">Prézens:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="variant" name="Spelling Variant" show="true">
+      <label show="true">
+        <translation lang="default">Spelling Variant:</translation>
+        <translation lang="cs">Pravopisná varianta:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="variant" name="Unspecified Variant" show="true">
+      <label show="true">
+        <translation lang="default">Unspecified Variant:</translation>
+        <translation lang="cs">Nespecifikovaná varianta:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+  </fields>
+
+  <security mode="any">
+
+    <features>
+      <feature name="access-code-length" value="8"/>
+      <feature name="access-code-algorithm" value="C"/>
+      <feature name="require-internet" value="false"/>
+      <feature name="calc-code" value=""/>
+    </features>
+    <pin>wqfUEy/vgWc=</pin>
+  </security>
+
+  <interface-languages>
+    <trait name="use-system-language" value="true"/>
+    <writing-systems>
+      <writing-system code="en" type="interface">
+        <display-names>
+          <form lang="en">English</form>
+          <form lang="fr">Anglais</form>
+          <form lang="es">Inglés</form>
+          <form lang="cs">Angličitna</form>
+        </display-names>
+        <font-family>system</font-family>
+        <trait name="text-direction" value="LTR"/>
+      </writing-system>
+
+      <writing-system code="fr" type="interface" enabled="false">
+        <display-names>
+          <form lang="en">French</form>
+          <form lang="fr">Français</form>
+          <form lang="es">Francés</form>
+        </display-names>
+        <font-family>system</font-family>
+        <trait name="text-direction" value="LTR"/>
+      </writing-system>
+
+      <writing-system code="es" type="interface" enabled="false">
+        <display-names>
+          <form lang="en">Spanish</form>
+          <form lang="fr">Espagnol</form>
+          <form lang="es">Español</form>
+        </display-names>
+        <font-family>system</font-family>
+        <trait name="text-direction" value="LTR"/>
+      </writing-system>
+
+      <writing-system code="pt" type="interface" enabled="false">
+        <display-names>
+          <form lang="en">Portuguese</form>
+          <form lang="fr">Portugais</form>
+          <form lang="es">Portugués</form>
+        </display-names>
+        <font-family>system</font-family>
+        <trait name="text-direction" value="LTR"/>
+      </writing-system>
+
+      <writing-system code="ru" type="interface" enabled="false">
+        <display-names>
+          <form lang="en">Russian</form>
+          <form lang="fr">Russe</form>
+          <form lang="es">Ruso</form>
+        </display-names>
+        <font-family>system</font-family>
+        <trait name="text-direction" value="LTR"/>
+      </writing-system>
+
+      <writing-system code="uk" type="interface" enabled="false">
+        <display-names>
+          <form lang="en">Ukrainian</form>
+          <form lang="fr">Ukrainien</form>
+          <form lang="es">Ucraniano</form>
+        </display-names>
+        <font-family>system</font-family>
+        <trait name="text-direction" value="LTR"/>
+      </writing-system>
+
+      <writing-system code="tr" type="interface" enabled="false">
+        <display-names>
+          <form lang="en">Turkish</form>
+          <form lang="es">Turco</form>
+          <form lang="fr">Turc</form>
+          <form lang="tr">Türkçe</form>
+          <form lang="pt">Turco</form>
+        </display-names>
+        <font-family>system</font-family>
+        <trait name="text-direction" value="LTR"/>
+      </writing-system>
+
+      <writing-system code="id" type="interface" enabled="false">
+        <display-names>
+          <form lang="en">Indonesian</form>
+          <form lang="fr">Indonesien</form>
+          <form lang="es">Indonesio</form>
+        </display-names>
+        <font-family>system</font-family>
+        <trait name="text-direction" value="LTR"/>
+      </writing-system>
+
+      <writing-system code="zh" type="interface" enabled="false">
+        <display-names>
+          <form lang="en">Chinese (Simplified)</form>
+          <form lang="fr">Chinois (simplifié)</form>
+          <form lang="es">Chino (simplificado)</form>
+        </display-names>
+        <font-family>system</font-family>
+        <trait name="text-direction" value="LTR"/>
+      </writing-system>
+
+      <writing-system code="cs" type="interface">
+        <display-names>
+          <form lang="en">Czech</form>
+          <form lang="cs">Čeština</form>
+        </display-names>
+        <font-family>system</font-family>
+        <trait name="text-direction" value="LTR"/>
+      </writing-system>
+    </writing-systems>
+  </interface-languages>
+
+  <translation-mappings default-lang="en">
+    <translation-mapping id="Menu_Home">
+      <translation lang="en">Home</translation>
+      <translation lang="fr">Accueil</translation>
+      <translation lang="tr">Ev</translation>
+      <translation lang="id">Beranda</translation>
+      <translation lang="es">Inicio</translation>
+      <translation lang="cs">Domů</translation>
+    </translation-mapping>
+    <translation-mapping id="Menu_Search">
+      <translation lang="en">Search</translation>
+      <translation lang="fr">Rechercher</translation>
+      <translation lang="es">Buscar</translation>
+      <translation lang="pt">Pesquisar</translation>
+      <translation lang="ru">Поиск</translation>
+      <translation lang="uk">Пошук</translation>
+      <translation lang="id">Penelusuran</translation>
+      <translation lang="zh">搜索</translation>
+      <translation lang="cs">Hledat</translation>
+    </translation-mapping>
+    <translation-mapping id="Menu_Settings">
+      <translation lang="en">Settings</translation>
+      <translation lang="fr">Paramètres</translation>
+      <translation lang="es">Configuración</translation>
+      <translation lang="pt">Configurações</translation>
+      <translation lang="ru">Настройки</translation>
+      <translation lang="uk">Налаштування</translation>
+      <translation lang="zh">设置</translation>
+      <translation lang="cs">Nastavení</translation>
+    </translation-mapping>
+    <translation-mapping id="Menu_About">
+      <translation lang="en">About</translation>
+      <translation lang="fr">A propos</translation>
+      <translation lang="es">Acerca de</translation>
+      <translation lang="pt">Sobre</translation>
+      <translation lang="ru">О программе</translation>
+      <translation lang="uk">Про програму</translation>
+      <translation lang="id">Seputar</translation>
+      <translation lang="zh">关于</translation>
+      <translation lang="cs">O programu</translation>
+    </translation-mapping>
+    <translation-mapping id="Menu_Share_App">
+      <translation lang="en">Share App</translation>
+      <translation lang="fr">Partager application</translation>
+      <translation lang="es">Compartir aplicación</translation>
+      <translation lang="pt">Compartilhar aplicativo</translation>
+      <translation lang="cs">Sdílet aplikaci</translation>
+    </translation-mapping>
+    <translation-mapping id="Menu_Text_Appearance">
+      <translation lang="en">Text Appearance</translation>
+      <translation lang="fr">Taille de police</translation>
+      <translation lang="es">Tamaño de texto</translation>
+      <translation lang="pt">Tamanho do texto</translation>
+      <translation lang="ru">Размер текста</translation>
+      <translation lang="uk">Розмір тексту</translation>
+      <translation lang="id">Ukuran teks</translation>
+      <translation lang="zh">文字大小</translation>
+      <translation lang="cs">Vzhled textu</translation>
+    </translation-mapping>
+    <translation-mapping id="Menu_Edit">
+      <translation lang="en">Edit</translation>
+      <translation lang="fr">Editer</translation>
+      <translation lang="es">Editar</translation>
+      <translation lang="pt">Editar</translation>
+      <translation lang="ru">Изменить</translation>
+      <translation lang="id">Sunting</translation>
+      <translation lang="cs">Upravit</translation>
+    </translation-mapping>
+    <translation-mapping id="Button_OK">
+      <translation lang="en">OK</translation>
+      <translation lang="fr">OK</translation>
+      <translation lang="es">OK</translation>
+      <translation lang="pt">OK</translation>
+      <translation lang="ru">OK</translation>
+      <translation lang="uk">OK</translation>
+      <translation lang="zh">行</translation>
+      <translation lang="cs">OK</translation>
+    </translation-mapping>
+    <translation-mapping id="Button_Yes">
+      <translation lang="en">Yes</translation>
+      <translation lang="fr">Oui</translation>
+      <translation lang="es">Si</translation>
+      <translation lang="pt">Sim</translation>
+      <translation lang="ru">Да</translation>
+      <translation lang="uk">Так</translation>
+      <translation lang="zh">是</translation>
+      <translation lang="cs">Ano</translation>
+    </translation-mapping>
+    <translation-mapping id="Button_No">
+      <translation lang="en">No</translation>
+      <translation lang="fr">Non</translation>
+      <translation lang="es">No</translation>
+      <translation lang="pt">Não</translation>
+      <translation lang="ru">Нет</translation>
+      <translation lang="uk">Ні</translation>
+      <translation lang="zh">不是</translation>
+      <translation lang="cs">Ne</translation>
+    </translation-mapping>
+    <translation-mapping id="Button_Close">
+      <translation lang="en">Close</translation>
+      <translation lang="fr">Fermer</translation>
+      <translation lang="es">Cerrar</translation>
+      <translation lang="pt">Fechar</translation>
+      <translation lang="ru">Закрыть</translation>
+      <translation lang="uk">Закрити</translation>
+      <translation lang="id">Tutup</translation>
+      <translation lang="zh">关闭</translation>
+      <translation lang="cs">Zavřít</translation>
+    </translation-mapping>
+    <translation-mapping id="Button_Cancel">
+      <translation lang="en">Cancel</translation>
+      <translation lang="fr">Annuler</translation>
+      <translation lang="es">Cancelar</translation>
+      <translation lang="pt">Cancelar</translation>
+      <translation lang="ru">Отменить</translation>
+      <translation lang="uk">Скасувати</translation>
+      <translation lang="id">Batal</translation>
+      <translation lang="zh">取消</translation>
+      <translation lang="cs">Storno</translation>
+    </translation-mapping>
+    <translation-mapping id="Button_Submit">
+      <translation lang="en">Submit</translation>
+      <translation lang="fr">Soumettre</translation>
+      <translation lang="es">Envíe</translation>
+      <translation lang="cs">Poslat</translation>
+    </translation-mapping>
+    <translation-mapping id="Audio_Download_Title">
+      <translation lang="en">Audio Download</translation>
+      <translation lang="fr">Téléchargement audio</translation>
+      <translation lang="es">Descarga de audio</translation>
+      <translation lang="pt">Download de áudio</translation>
+      <translation lang="ru">Загрузка аудио</translation>
+      <translation lang="uk">Завантаження аудіо</translation>
+      <translation lang="zh">音频下载</translation>
+      <translation lang="cs">Stáhnout audio</translation>
+    </translation-mapping>
+    <translation-mapping id="Audio_Download_Confirm">
+      <translation lang="en">Download audio file?</translation>
+      <translation lang="fr">Télécharger fichier audio?</translation>
+      <translation lang="es">¿Descargar archivo de audio?</translation>
+      <translation lang="pt">Baixar arquivo de áudio?</translation>
+      <translation lang="ru">Загрузить аудио файл?</translation>
+      <translation lang="uk">Завантажити аудіо файл?</translation>
+      <translation lang="zh">下载音频文件吗？</translation>
+      <translation lang="cs">Stáhnout audio soubor?</translation>
+    </translation-mapping>
+    <translation-mapping id="Audio_Download_Auto">
+      <translation lang="en">Download automatically from now on</translation>
+      <translation lang="fr">Télécharger automatiquement à partir de maintenant</translation>
+      <translation lang="es">Siempre descargar audio automáticamente</translation>
+      <translation lang="pt">Baixar automaticamente a partir de agora</translation>
+      <translation lang="ru">В дальнейшем загружать автоматически</translation>
+      <translation lang="uk">Надалі завантажувати автоматично</translation>
+      <translation lang="zh">后来自动下载</translation>
+      <translation lang="cs">Auzomaticky stáhnout z:</translation>
+    </translation-mapping>
+    <translation-mapping id="Audio_Download_Connect">
+      <translation lang="en">To download audio files, please connect to the internet.</translation>
+      <translation lang="fr">Pour télécharger les fichiers audio, veuillez vous connecter à l&apos;internet</translation>
+      <translation lang="es">Para descargar archivos de audio, favor  conectarse a internet</translation>
+      <translation lang="pt">Para baixar arquivos de áudio, conecte-se à Internet.</translation>
+      <translation lang="ru">Для загрузки аудио файлов, пожалуйста, подключитесь к интернету</translation>
+      <translation lang="uk">Щоб завантажити аудіо файли, будь ласка, під&apos;єднайтеся до інтернету</translation>
+      <translation lang="zh">下载的音频文件，请连接到互联网。</translation>
+      <translation lang="cs">Pro stažení audia se připojte k internetu.</translation>
+    </translation-mapping>
+    <translation-mapping id="Audio_Download_Error">
+      <translation lang="en">Download Error:</translation>
+      <translation lang="fr">Erreur de téléchargement :</translation>
+      <translation lang="es">Error de descarga:</translation>
+      <translation lang="pt">Erro de download:</translation>
+      <translation lang="ru">Ошибка загрузки</translation>
+      <translation lang="uk">Помилка завантаження</translation>
+      <translation lang="zh">下载错误：</translation>
+      <translation lang="cs">Chyba při stahování</translation>
+    </translation-mapping>
+    <translation-mapping id="Audio_Downloading">
+      <translation lang="en">Downloading audio...</translation>
+      <translation lang="fr">Téléchargement de l&apos;audio...</translation>
+      <translation lang="es">Descargando el audio...</translation>
+      <translation lang="cs">Stahování audia…</translation>
+    </translation-mapping>
+    <translation-mapping id="Audio_Check_Connection">
+      <translation lang="en">Please check your internet connection.</translation>
+      <translation lang="fr">Veuillez vérifier votre connexion internet</translation>
+      <translation lang="es">Por favor revise su conexión a Internet</translation>
+      <translation lang="pt">Verifique a sua conexão com a Internet.</translation>
+      <translation lang="ru">Пожалуйста, проверьте интернет-соединение</translation>
+      <translation lang="uk">Будь ласка, перевірте інтернет з&apos;єднання</translation>
+      <translation lang="zh">请检查您的网络连接。</translation>
+      <translation lang="cs">Zkontrolujte připojení k intenretu.</translation>
+    </translation-mapping>
+    <translation-mapping id="Audio_File_Not_Found">
+      <translation lang="en">Audio file not found</translation>
+      <translation lang="fr">Fichier audio introuvable</translation>
+      <translation lang="es">Archivo no encontrado</translation>
+      <translation lang="pt">Arquivo de áudio não encontrado</translation>
+      <translation lang="ru">Аудио файл не найден</translation>
+      <translation lang="uk">Аудіо файл не знайдено</translation>
+      <translation lang="zh">找不到音频文件</translation>
+      <translation lang="cs">Audio soubor nenalezen.</translation>
+    </translation-mapping>
+    <translation-mapping id="Search_Title">
+      <translation lang="en">Search</translation>
+      <translation lang="fr">Recherche</translation>
+      <translation lang="es">Búsqueda</translation>
+      <translation lang="pt">Pesquisar</translation>
+      <translation lang="ru">Поиск</translation>
+      <translation lang="uk">Пошук</translation>
+      <translation lang="id">Penelusuran</translation>
+      <translation lang="zh">搜索</translation>
+      <translation lang="cs">Hledat</translation>
+    </translation-mapping>
+    <translation-mapping id="Search_Button">
+      <translation lang="en">Search</translation>
+      <translation lang="fr">Rechercher</translation>
+      <translation lang="es">Búsqueda</translation>
+      <translation lang="pt">Pesquisar</translation>
+      <translation lang="ru">Поиск</translation>
+      <translation lang="uk">Пошук</translation>
+      <translation lang="id">Penelusuran</translation>
+      <translation lang="zh">搜索</translation>
+      <translation lang="cs">Hledat</translation>
+    </translation-mapping>
+    <translation-mapping id="Search_Text_Hint">
+      <translation lang="en">Search</translation>
+      <translation lang="fr">Recherche</translation>
+      <translation lang="es">Búsqueda</translation>
+      <translation lang="pt">Pesquisar</translation>
+      <translation lang="ru">Поиск</translation>
+      <translation lang="id">Penelusuran</translation>
+      <translation lang="cs">Hledat</translation>
+    </translation-mapping>
+    <translation-mapping id="Search_Results_Title">
+      <translation lang="en">Search:</translation>
+      <translation lang="fr">Recherche :</translation>
+      <translation lang="es">Búsqueda:</translation>
+      <translation lang="pt">Pesquisar:</translation>
+      <translation lang="ru">Поиск:</translation>
+      <translation lang="uk">Пошук:</translation>
+      <translation lang="id">Penelusuran:</translation>
+      <translation lang="zh">搜索:</translation>
+      <translation lang="cs">Nalezeno:</translation>
+    </translation-mapping>
+    <translation-mapping id="Search_Match_Whole_Words">
+      <translation lang="en">Match whole words</translation>
+      <translation lang="fr">Mots entiers</translation>
+      <translation lang="es">Palabras completas</translation>
+      <translation lang="pt">Palavras Inteiras</translation>
+      <translation lang="ru">Сравнить Слова целиком</translation>
+      <translation lang="id">Semua kata cocok</translation>
+      <translation lang="cs">Celá slova</translation>
+    </translation-mapping>
+    <translation-mapping id="Search_Match_Accents">
+      <translation lang="en">Match accents and tones</translation>
+      <translation lang="fr">Accents et tons</translation>
+      <translation lang="es">Acentos y tonos</translation>
+      <translation lang="pt">Acentos e Tons</translation>
+      <translation lang="ru">Сравнить ударение и тон</translation>
+      <translation lang="id">Aksen dan bunyi cocok</translation>
+      <translation lang="cs">Rozlišit diakritiku</translation>
+    </translation-mapping>
+    <translation-mapping id="Search_Searching">
+      <translation lang="en">Searching...</translation>
+      <translation lang="fr">Recherche en cours...</translation>
+      <translation lang="es">Buscando...</translation>
+      <translation lang="pt">Pesquisando...</translation>
+      <translation lang="ru">Идет Поиск...</translation>
+      <translation lang="id">Penelusuran...</translation>
+      <translation lang="cs">Hledám...</translation>
+    </translation-mapping>
+    <translation-mapping id="Search_Number_Found">
+      <translation lang="en">Found: %,d</translation>
+      <translation lang="fr">Nombre : %,d</translation>
+      <translation lang="es">Encontrados: %,d</translation>
+      <translation lang="pt">Encontrado: %,d</translation>
+      <translation lang="ru">Наидено: %,d</translation>
+      <translation lang="id">Ditemukan: %,d</translation>
+      <translation lang="cs">Nalezeno: %d</translation>
+    </translation-mapping>
+    <translation-mapping id="Search_No_Matches_Found">
+      <translation lang="en">No matches found</translation>
+      <translation lang="fr">Aucun résultat trouvé</translation>
+      <translation lang="es">No se encontró ninguna coincidencia</translation>
+      <translation lang="pt">Nenhum resultado encontrado</translation>
+      <translation lang="ru">ничего не найдено</translation>
+      <translation lang="id">Tidak ditemukan</translation>
+      <translation lang="cs">Nic nenalezeno</translation>
+    </translation-mapping>
+    <translation-mapping id="Settings_Title">
+      <translation lang="en">Settings</translation>
+      <translation lang="fr">Paramètres</translation>
+      <translation lang="es">Configuración</translation>
+      <translation lang="pt">Configurações</translation>
+      <translation lang="id">Pengaturan</translation>
+      <translation lang="cs">Nastavení</translation>
+    </translation-mapping>
+    <translation-mapping id="Settings_Category_Interface">
+      <translation lang="en">User Interface</translation>
+      <translation lang="fr">Interface utilisateur</translation>
+      <translation lang="es">Interfaz de usuario</translation>
+      <translation lang="id">Antarmuka pengguna</translation>
+      <translation lang="cs">Uživatelské rozhraní</translation>
+    </translation-mapping>
+    <translation-mapping id="Settings_Interface_Language">
+      <translation lang="en">Language</translation>
+      <translation lang="fr">Langue</translation>
+      <translation lang="es">Idioma</translation>
+      <translation lang="pt">Idioma</translation>
+      <translation lang="id">Bahasa antarmuka</translation>
+      <translation lang="cs">Jazyk</translation>
+    </translation-mapping>
+    <translation-mapping id="Settings_Layout_Direction">
+      <translation lang="en">Layout direction</translation>
+      <translation lang="fr">Direction de mise en page</translation>
+      <translation lang="id">Arah tata letak</translation>
+      <translation lang="es">Dirección del diseño</translation>
+      <translation lang="cs">Směr rozložení</translation>
+    </translation-mapping>
+    <translation-mapping id="Settings_Layout_Direction_LTR">
+      <translation lang="en">Left to Right</translation>
+      <translation lang="fr">De gauche à droite</translation>
+      <translation lang="es">De izquierda a derecha</translation>
+      <translation lang="id">Kiri ke kanan</translation>
+      <translation lang="cs">Zleva doprava</translation>
+    </translation-mapping>
+    <translation-mapping id="Settings_Layout_Direction_RTL">
+      <translation lang="en">Right to Left</translation>
+      <translation lang="fr">De droite à gauche</translation>
+      <translation lang="es">De derecha a izquierda</translation>
+      <translation lang="id">Kanan ke kiri</translation>
+      <translation lang="cs">Zprava doleva</translation>
+    </translation-mapping>
+    <translation-mapping id="Settings_Layout_Direction_Interface_Language">
+      <translation lang="en">Direction of interface language</translation>
+      <translation lang="fr">Direction de la langue de l&apos;interface</translation>
+      <translation lang="id">Arah bahasa antarmuka</translation>
+      <translation lang="es">Dirección del idioma de la interfaz</translation>
+      <translation lang="cs">Směr jazyka uživatelského rozhraní</translation>
+    </translation-mapping>
+    <translation-mapping id="Settings_Layout_Direction_Text">
+      <translation lang="en">Direction of current text</translation>
+      <translation lang="fr">Direction du texte actuel</translation>
+      <translation lang="id">Arah teks saat ini</translation>
+      <translation lang="es">Dirección del texto actual</translation>
+      <translation lang="cs">Směr aktuálního textu</translation>
+    </translation-mapping>
+    <translation-mapping id="Settings_Keep_Screen_On">
+      <translation lang="en">Keep screen on</translation>
+      <translation lang="fr">Garder l&apos;écran allumé</translation>
+      <translation lang="es">Mantener la pantalla encendida</translation>
+      <translation lang="pt">Manter a tela ligada</translation>
+      <translation lang="cs">Zachovat zapnutou obrazovku</translation>
+    </translation-mapping>
+    <translation-mapping id="Settings_Share_Usage_Data">
+      <translation lang="en">Share usage data</translation>
+      <translation lang="cs">Sdílet data o používání</translation>
+    </translation-mapping>
+    <translation-mapping id="Share_Apk_File">
+      <translation lang="en">Share App Installer File</translation>
+      <translation lang="fr">Partager fichier d&apos;installation de l&apos;appli</translation>
+      <translation lang="es">Compartir archivo del instalador de aplicacion</translation>
+      <translation lang="pt">Compartilhar arquivo de instalação do aplicativo</translation>
+      <translation lang="cs">Sdílet instalační soubor</translation>
+    </translation-mapping>
+    <translation-mapping id="Share_Apk_File_Via">
+      <translation lang="en">Share App via</translation>
+      <translation lang="fr">Partager application par</translation>
+      <translation lang="es">Compartir la aplicación a través de</translation>
+      <translation lang="cs">Sdílet aplikaci</translation>
+    </translation-mapping>
+    <translation-mapping id="Share_App_Link">
+      <translation lang="en">Share Link to App on Google Play</translation>
+      <translation lang="fr">Partager lien à l&apos;appli sur Google Play</translation>
+      <translation lang="es">Compartir enlace de la aplicación en Google Play</translation>
+      <translation lang="pt">Compartilhar link para o aplicativo no Google Play</translation>
+      <translation lang="cs">Sdílet odkaz na aplikaci v Google Play</translation>
+    </translation-mapping>
+    <translation-mapping id="Share_App_Link_Recommend">
+      <translation lang="en">I can recommend this app:</translation>
+      <translation lang="fr">Je peux recommander cette application :</translation>
+      <translation lang="es">Puedo recomendar esta aplicación:</translation>
+      <translation lang="cs">Aplikaci můžu doporučit:</translation>
+    </translation-mapping>
+    <translation-mapping id="Share_App_Link_Via">
+      <translation lang="en">Share Link via</translation>
+      <translation lang="fr">Partager lien par</translation>
+      <translation lang="es">Compartir el enlace a través de</translation>
+      <translation lang="cs">Sdílet odkaz</translation>
+    </translation-mapping>
+    <translation-mapping id="Menu_Users_Add">
+      <translation lang="en">Add User</translation>
+      <translation lang="fr">Ajouter utilisateur</translation>
+      <translation lang="pt">Adicionar Usuário</translation>
+      <translation lang="es">Añadir usuario</translation>
+      <translation lang="cs">Přidat uživatele</translation>
+    </translation-mapping>
+    <translation-mapping id="Menu_Users_List">
+      <translation lang="en">Users</translation>
+      <translation lang="fr">Utilisateurs</translation>
+      <translation lang="es">Usuarios</translation>
+      <translation lang="pt">Usuários</translation>
+      <translation lang="cs">Uživatelé</translation>
+    </translation-mapping>
+    <translation-mapping id="Language_en">
+      <translation lang="en">English</translation>
+      <translation lang="fr">Anglais</translation>
+      <translation lang="es">Inglés</translation>
+      <translation lang="cs">Angličtina</translation>
+    </translation-mapping>
+    <translation-mapping id="Language_fr">
+      <translation lang="en">French</translation>
+      <translation lang="fr">Français</translation>
+      <translation lang="es">Francés</translation>
+      <translation lang="cs">Francouzština</translation>
+    </translation-mapping>
+    <translation-mapping id="Language_id">
+      <translation lang="en">Indonesian</translation>
+      <translation lang="fr">Indonesien</translation>
+      <translation lang="es">Indonesio</translation>
+      <translation lang="cs">Indonéština</translation>
+    </translation-mapping>
+    <translation-mapping id="Language_pt">
+      <translation lang="en">Portuguese</translation>
+      <translation lang="fr">Portugais</translation>
+      <translation lang="es">Portugués</translation>
+      <translation lang="cs">Portugalština</translation>
+    </translation-mapping>
+    <translation-mapping id="Language_ru">
+      <translation lang="en">Russian</translation>
+      <translation lang="fr">Russe</translation>
+      <translation lang="es">Ruso</translation>
+      <translation lang="cs">Ruština</translation>
+    </translation-mapping>
+    <translation-mapping id="Language_es">
+      <translation lang="en">Spanish</translation>
+      <translation lang="fr">Espagnol</translation>
+      <translation lang="es">Español</translation>
+      <translation lang="cs">Španělština</translation>
+    </translation-mapping>
+    <translation-mapping id="Language_tr">
+      <translation lang="en">Turkish</translation>
+      <translation lang="es">Turco</translation>
+      <translation lang="fr">Turc</translation>
+      <translation lang="tr">Türkçe</translation>
+      <translation lang="pt">Turco</translation>
+      <translation lang="cs">Turečtina</translation>
+    </translation-mapping>
+    <translation-mapping id="Language_uk">
+      <translation lang="en">Ukrainian</translation>
+      <translation lang="fr">Ukrainien</translation>
+      <translation lang="es">Ucraniano</translation>
+      <translation lang="cs">Ukrainština</translation>
+    </translation-mapping>
+    <translation-mapping id="Language_zh">
+      <translation lang="en">Chinese (Simplified)</translation>
+      <translation lang="fr">Chinois (simplifié)</translation>
+      <translation lang="es">Chino (simplificado)</translation>
+      <translation lang="cs">Čínština (zjednodušená)</translation>
+    </translation-mapping>
+    <translation-mapping id="Button_Start">
+      <translation lang="en">Start</translation>
+      <translation lang="fr">Commencer</translation>
+      <translation lang="es">Comenzar</translation>
+      <translation lang="cs">Start</translation>
+    </translation-mapping>
+    <translation-mapping id="Button_Sign_Up">
+      <translation lang="en">Sign Up</translation>
+      <translation lang="fr">S&apos;inscrire</translation>
+      <translation lang="es">Inscríbete.</translation>
+      <translation lang="cs">Přihlásit se</translation>
+    </translation-mapping>
+    <translation-mapping id="Share_Apk_Link">
+      <translation lang="en">Share Link to App Installer File</translation>
+      <translation lang="fr">Partager le lien vers le fichier d&apos;installation de l&apos;appli</translation>
+      <translation lang="es">Compartir enlace al archivo del instalador de la aplicación</translation>
+      <translation lang="pt">Compartilhar link para o Arquivo de Instalação do Aplicativo</translation>
+      <translation lang="ru">Поделиться ссылкой на файл установщика приложения (.apk)</translation>
+      <translation lang="tr">Uygulama Yükleyici Dosyasının Bağlantısını Paylaş</translation>
+      <translation lang="id">Bagikan tautan ke file aplikasi (APK)</translation>
+      <translation lang="zh">分享应用程序安装程序文件的链接</translation>
+      <translation lang="cs">Sdílet odkaz na instalační soubor aplikace.</translation>
+    </translation-mapping>
+    <translation-mapping id="Download_APK">
+      <translation lang="en">Download APK</translation>
+      <translation lang="fr">Télécharger l&apos;APK</translation>
+      <translation lang="es">Descargar APK</translation>
+      <translation lang="pt">Baixar APK</translation>
+      <translation lang="ru">Скачать APK</translation>
+      <translation lang="tr">APK indir</translation>
+      <translation lang="id">Unduh APK</translation>
+      <translation lang="zh">下载APK</translation>
+      <translation lang="cs">Stáhnout APK</translation>
+    </translation-mapping>
+    <translation-mapping id="Settings_Category_Text_Display">
+      <translation lang="en">Text Display</translation>
+      <translation lang="fr">Affichage du texte</translation>
+      <translation lang="id">Tampilan Teks</translation>
+      <translation lang="es">Pantalla de texto</translation>
+      <translation lang="cs">Zobrazení textu</translation>
+    </translation-mapping>
+    <translation-mapping id="Settings_Category_Navigation">
+      <translation lang="en">Navigation</translation>
+      <translation lang="fr">Navigation</translation>
+      <translation lang="es">Navegación</translation>
+      <translation lang="id">Navigasi</translation>
+      <translation lang="cs">Navigace</translation>
+    </translation-mapping>
+    <translation-mapping id="Settings_Category_Audio">
+      <translation lang="en">Audio</translation>
+      <translation lang="fr">Audio</translation>
+      <translation lang="fa">صوتی</translation>
+      <translation lang="ru">Аудио</translation>
+      <translation lang="es">Audio</translation>
+      <translation lang="pt">Áudio</translation>
+      <translation lang="de">Audio</translation>
+      <translation lang="id">Audio</translation>
+      <translation lang="az">Audio</translation>
+      <translation lang="ar">صوتيات</translation>
+      <translation lang="hi">ऑडियो</translation>
+      <translation lang="te">ఆడియో</translation>
+      <translation lang="ko">오디오</translation>
+      <translation lang="ms">Audio</translation>
+      <translation lang="nl">Geluidsbestand</translation>
+      <translation lang="ta">ஒலிவடிவ வசனங்கள்</translation>
+      <translation lang="cs">Audio</translation>
+    </translation-mapping>
+    <translation-mapping id="Settings_Audio_Access_Method">
+      <translation lang="en">Audio download or streaming</translation>
+      <translation lang="fr">Streaming ou téléchargement audio</translation>
+      <translation lang="id">Mengunduh atau streaming</translation>
+      <translation lang="ar">تنزيل أو بث الصوت</translation>
+      <translation lang="nl">Geluidsbestand downloaden of streamen</translation>
+      <translation lang="ta">ஒலிவடிவ வசன பதிவிறக்கம் (அ) இயக்கம்</translation>
+      <translation lang="ru">Загружать аудиофайлы или слушать потоковое аудио</translation>
+      <translation lang="de">Audio herunterladen oder streamen</translation>
+      <translation lang="cs">Stažení nebo streamování videa</translation>
+    </translation-mapping>
+    <translation-mapping id="Settings_Audio_Access_Method_Stream">
+      <translation lang="en">Stream audio files</translation>
+      <translation lang="fr">Streaming audio</translation>
+      <translation lang="id">Stream audio</translation>
+      <translation lang="ar">جريان ملفات الصوت</translation>
+      <translation lang="nl">Geluidsbestanden streamen</translation>
+      <translation lang="ta">இயக்க முறையில்</translation>
+      <translation lang="ru">Слушать потоковое аудио</translation>
+      <translation lang="de">Audiodateien streamen</translation>
+      <translation lang="cs">Streamovat audio soubory</translation>
+    </translation-mapping>
+    <translation-mapping id="Settings_Audio_Access_Method_Download">
+      <translation lang="en">Download audio files</translation>
+      <translation lang="fr">Télécharger fichiers audio</translation>
+      <translation lang="id">Unduh file-file audio</translation>
+      <translation lang="ar">تنزيل ملفات الصوت</translation>
+      <translation lang="nl">Geluidsbestanden downloaden</translation>
+      <translation lang="ta">பதிவிறக்க முறையில்</translation>
+      <translation lang="ru">Загружать аудиофайлы</translation>
+      <translation lang="de">Herunterladen von Audiodateien</translation>
+      <translation lang="cs">Stáhnout audio souboruy</translation>
+    </translation-mapping>
+    <translation-mapping id="Settings_Audio_Download_Mode">
+      <translation lang="en">Audio file download</translation>
+      <translation lang="fr">Téléchargement de fichiers audio</translation>
+      <translation lang="fa">دانلود فایل صوتی</translation>
+      <translation lang="ru">Скачивание аудиофайла</translation>
+      <translation lang="es">Descargar archivos de audio</translation>
+      <translation lang="pt">Baixar arquivo de áudio</translation>
+      <translation lang="de">Herunterladen der Audiodatei</translation>
+      <translation lang="id">Unduhan file audio</translation>
+      <translation lang="az">Audio faylını yükləyin</translation>
+      <translation lang="ar">تحميل الملف الصوتي</translation>
+      <translation lang="hi">ऑडियो फ़ाइल डाउनलोड</translation>
+      <translation lang="te">ఆడియో ఫైల్ డౌన్లోడ్</translation>
+      <translation lang="ko">오디오 파일 내려받기</translation>
+      <translation lang="ms">Serlahkan frasa disegerakkan</translation>
+      <translation lang="nl">Downloaden van geluidsbestand</translation>
+      <translation lang="ta">ஒலிவடிவ வசனம் பதிவிறக்கும் விதம்</translation>
+      <translation lang="cs">Stažení audio souboru</translation>
+    </translation-mapping>
+    <translation-mapping id="Settings_Audio_Download_Prompt">
+      <translation lang="en">Always ask before downloading</translation>
+      <translation lang="fr">Demander avant de télécharger</translation>
+      <translation lang="fa">همیشه قبل از دانلود اجازه گرفته شود</translation>
+      <translation lang="ru">Всегда спрашивать перед скачиванием</translation>
+      <translation lang="es">Siempre preguntar antes de descargar</translation>
+      <translation lang="pt">Sempre perguntar antes de baixar</translation>
+      <translation lang="de">Vor dem Herunterladen immer fragen</translation>
+      <translation lang="id">Selalu bertanya sebelum mengunduh</translation>
+      <translation lang="az">Yükləməzdən əvvəl həmişə soruş</translation>
+      <translation lang="ar">الإستئذان قبل التحميل</translation>
+      <translation lang="hi">डाउनलोड करने से पहले हमेशा पूछें</translation>
+      <translation lang="te">డౌన్లోడ్ చేయడానికి ముందు అడుగుము</translation>
+      <translation lang="ko">내려받기 전 항상 묻기</translation>
+      <translation lang="ms">Sentiasa tanya sebelum memuat turun</translation>
+      <translation lang="nl">Toestemming vragen voor het downloaden</translation>
+      <translation lang="ta">அனுமதி பெற்று பதிவிறக்கு</translation>
+      <translation lang="cs">Vždy se ptát před stažením</translation>
+    </translation-mapping>
+    <translation-mapping id="Settings_Audio_Download_Automatic">
+      <translation lang="en">Download automatically</translation>
+      <translation lang="fr">Télécharger automatiquement</translation>
+      <translation lang="fa">دانلود به صورت اتوماتیک</translation>
+      <translation lang="ru">Скачивать автоматически</translation>
+      <translation lang="es">Descargar automáticamente</translation>
+      <translation lang="pt">Baixar automaticamente</translation>
+      <translation lang="de">Automatisch herunterladen</translation>
+      <translation lang="id">Mengunduh secara otomatis</translation>
+      <translation lang="az">Avtomatik yüklə</translation>
+      <translation lang="ar">التحميل بصورة الية</translation>
+      <translation lang="hi">अपने आप से डाउनलोड करें</translation>
+      <translation lang="te">ఆటోమేటిక్ డౌన్లోడ్ చేయండి</translation>
+      <translation lang="ko">자동 내려받기</translation>
+      <translation lang="ms">Muat turun secara automatik</translation>
+      <translation lang="nl">Downloaden zonder vragen</translation>
+      <translation lang="ta">தானாக பதிவிறக்கு</translation>
+      <translation lang="cs">Stahovat automaticky</translation>
+    </translation-mapping>
+    <translation-mapping id="Settings_Audio_Download_Automatic_Wifi">
+      <translation lang="en">Download automatically if using WiFi</translation>
+      <translation lang="fr">Télécharger automatiquement si vous êtes sur WiFi</translation>
+      <translation lang="fa">دانلود به صورت اتوماتیک هنگام استفاده از WiFi</translation>
+      <translation lang="ru">Скачивать автоматически при подключении по WiFi</translation>
+      <translation lang="es">Descargar automáticamente si usa WiFi</translation>
+      <translation lang="pt">Baixar automaticamente usando a rede sem fio</translation>
+      <translation lang="de">Automatisch herunterladen wenn WLAN genutzt wird</translation>
+      <translation lang="id">Mengunduh secara otomatis kalau ada WiFi</translation>
+      <translation lang="az">WiFi istifadə edərkən avtomatik olaraq yüklə</translation>
+      <translation lang="ar">التحميل بصورة آلية في حال إستعمال واي فاي</translation>
+      <translation lang="hi">सिर्फ वाई-फाई  (Wi-Fi)से डाउनलोड करें</translation>
+      <translation lang="te">వైఫైని (Wi-Fi) ఉపయోగించి డౌన్లోడ్ చేయండి</translation>
+      <translation lang="ko">와이파이(WiFi) 사용시 자동으로 내려받기</translation>
+      <translation lang="ms">Muat turun secara automatik jika menggunakan WiFi</translation>
+      <translation lang="nl">Automatisch downloaden bij internetverbinding</translation>
+      <translation lang="ta">வைஃபை இணைப்பில் மட்டும் தானாக பதிவிறக்கு</translation>
+      <translation lang="cs">Stahovat automaticky, je-li k dispozici Wi-Fi</translation>
+    </translation-mapping>
+    <translation-mapping id="Version_Number">
+      <translation lang="en">Version %s</translation>
+      <translation lang="fr">Version %s</translation>
+      <translation lang="tr">Sürüm %s</translation>
+      <translation lang="es">Versión %s</translation>
+      <translation lang="cs">Verze %s</translation>
+    </translation-mapping>
+    <translation-mapping id="Security_Device_Id">
+      <translation lang="en">Device ID</translation>
+      <translation lang="fr">ID de l&apos;appareil</translation>
+      <translation lang="es">ID del aparato</translation>
+      <translation lang="pt">ID do dispositivo</translation>
+      <translation lang="cs">ID přístroje</translation>
+    </translation-mapping>
+    <translation-mapping id="Security_Enter_PIN">
+      <translation lang="en">Please enter your PIN</translation>
+      <translation lang="fr">Veuillez saisir votre code</translation>
+      <translation lang="es">Por favor ingrese su PIN</translation>
+      <translation lang="pt">Favor digite seu PIN</translation>
+      <translation lang="cs">Zadejte svůj PIN</translation>
+    </translation-mapping>
+    <translation-mapping id="Security_Incorrect_PIN">
+      <translation lang="en">Incorrect PIN</translation>
+      <translation lang="fr">Code incorrect</translation>
+      <translation lang="es">PIN Incorrecto</translation>
+      <translation lang="pt">PIN incorreto</translation>
+      <translation lang="cs">Špatný PIN</translation>
+    </translation-mapping>
+    <translation-mapping id="User_Missing_Fields">
+      <translation lang="en">Please complete the following fields to continue:</translation>
+      <translation lang="fr">Veuillez remplir les champs suivants pour continuer :</translation>
+      <translation lang="cs">Abyste mohli pokračovat, vyplňte prosím následující údaje:</translation>
+    </translation-mapping>
+    <translation-mapping id="User_Check_Internet">
+      <translation lang="en">Please check that you have an internet connection, then press the button again to continue.</translation>
+      <translation lang="fr">Veuillez vérifier que vous disposez d&apos;une connexion Internet, puis appuyez à nouveau sur le bouton pour continuer.</translation>
+      <translation lang="cs">Zkontrolujte, zda máte připojení k intenretu a zmáčkněte tlačítko pro pokračování.</translation>
+    </translation-mapping>
+    <translation-mapping id="User_Database_Sign_In_Error">
+      <translation lang="en">Sorry, we were unable to sign in to the database server.</translation>
+      <translation lang="fr">Désolé, nous n&apos;avons pas pu nous connecter au serveur de la base de données.</translation>
+      <translation lang="cs">Bohužel se nelze přihlásit k databázovému serveru.</translation>
+    </translation-mapping>
+    <translation-mapping id="User_Database_Add_User_Error">
+      <translation lang="en">Sorry, we were unable to add this information to the online database.</translation>
+      <translation lang="fr">Désolé, nous n&apos;avons pas pu ajouter cette information à la base de données en ligne.</translation>
+      <translation lang="cs">Bohužel nelze vložit tento údaj do on-line databáze.</translation>
+    </translation-mapping>
+    <translation-mapping id="Language_cs">
+      <translation lang="en">Czech</translation>
+      <translation lang="cs">Čeština</translation>
+    </translation-mapping>
+  </translation-mappings>
+
+  <images type="launcher">
+    <image width="36" height="36">drawable-ldpi\ic_launcher.png</image>
+    <image width="48" height="48">drawable-mdpi\ic_launcher.png</image>
+    <image width="72" height="72">drawable-hdpi\ic_launcher.png</image>
+    <image width="96" height="96">drawable-xhdpi\ic_launcher.png</image>
+    <image width="144" height="144">drawable-xxhdpi\ic_launcher.png</image>
+  </images>
+
+  <adaptive-icon>
+    <foreground inset="27.78%">
+      <image>ic_launcher_foreground.png</image>
+    </foreground>
+    <background>
+      <color value="#FFFFFF"/>
+    </background>
+  </adaptive-icon>
+</app-definition>
