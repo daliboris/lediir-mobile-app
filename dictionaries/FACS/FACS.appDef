@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<app-definition type="DAB" program-version="10.1">
+<app-definition type="DAB" program-version="11.0.3">
   <project-name>Persian-Czech Dictionary</project-name>
   <project-description>Persko-český slovník, mobilní aplikace</project-description>
   <project-group>LeDIIR</project-group>
@@ -8,16 +8,20 @@
   <app-name lang="cs">Persko-český slovník</app-name>
   <apk-filename append-version="true">Persian-Czech_Dictionary.apk</apk-filename>
   <package>cz.cas.soc.eldi.dictionary.facs</package>
-  <version code="2" name="2.0"/>
+  <version code="4" name="4.0"/>
   <multiple-apks value="false"/>
   <android-sdk min="23"/>
   <install-location value="preferExternal"/>
   <ipa-filename append-version="true"></ipa-filename>
   <ipa-version build="1" name="1.0"/>
-  <ipa-asset-filename></ipa-asset-filename>
+  <ipa-asset-filename>Persian-Czech_Dictionary.zip</ipa-asset-filename>
   <ipa-container-url></ipa-container-url>
   <ipa-app-type>dedicated</ipa-app-type>
   <ipa-container-audio>false</ipa-container-audio>
+
+  <pwa-manifest name="" short-name="">
+    <pwa-text lang="null" direction="LTR"/>
+  </pwa-manifest>
 
   <lexicon-db type="lift">LeDIIR-FACS-mobile.lift</lexicon-db>
   <source>V:\Projekty\Github\Daliboris\lediir\lift-to-tei\Dictionary\LeDIIR-FACS-mobile.lift</source>
@@ -40,7 +44,32 @@
   </analytics>
 
   <audio-sources>
+    <audio-source id="a1" type="assets" default="true">
+      <name>multimedia-source</name>
+      <folder>Persian-Czech-Dictionary-Multimedia</folder>
+    </audio-source>
   </audio-sources>
+
+  <audio-files>
+    <audio>
+      <filename src="a1">V:\Projekty\Github\Daliboris\lediir\lift-to-tei\Dictionary\resources\audio\new-recording-6.mp3</filename>
+    </audio>
+    <audio>
+      <filename src="a1">V:\Projekty\Github\Daliboris\lediir\lift-to-tei\Dictionary\resources\audio\new-recording-7.mp3</filename>
+    </audio>
+    <audio>
+      <filename src="a1">V:\Projekty\Github\Daliboris\lediir\lift-to-tei\Dictionary\resources\audio\new-recording-10.mp3</filename>
+    </audio>
+    <audio>
+      <filename src="a1">V:\Projekty\Github\Daliboris\lediir\lift-to-tei\Dictionary\resources\audio\new-recording-13.mp3</filename>
+    </audio>
+    <audio>
+      <filename src="a1">V:\Projekty\Github\Daliboris\lediir\lift-to-tei\Dictionary\resources\audio\new-recording-16.mp3</filename>
+    </audio>
+    <audio>
+      <filename src="a1">V:\Projekty\Github\Daliboris\lediir\lift-to-tei\Dictionary\resources\audio\new-recording-9.mp3</filename>
+    </audio>
+  </audio-files>
 
   <deep-linking enabled="false">
   </deep-linking>
@@ -53,10 +82,11 @@
     <feature name="app-layout-direction" value="text"/>
     <feature name="search" value="true"/>
     <feature name="replace-underscore-space" value="true"/>
+    <feature name="format-homonym-number" value="superscript"/>
     <feature name="omit-index-items-starting-with" value="true"/>
     <feature name="omit-index-items-starting-with-chars" value="? ( ) [ ] &quot; , ; * @ # | { }"/>
-    <feature name="omit-index-items-starting-with-digit" value="true"/>
-    <feature name="omit-index-items-longer-than" value="true"/>
+    <feature name="omit-index-items-starting-with-digit" value="false"/>
+    <feature name="omit-index-items-longer-than" value="false"/>
     <feature name="omit-index-items-longer-than-number" value="30"/>
     <feature name="modify-single-entry-styles" value="true"/>
     <feature name="summary-gloss-part-of-speech" value="true"/>
@@ -80,6 +110,7 @@
     <feature name="settings-audio-download-mode" value="true"/>
     <feature name="settings-audio-access-method" value="true"/>
     <feature name="settings-app-layout-direction" value="true"/>
+    <feature name="zoom-illustrations" value="false"/>
   </features>
 
   <firebase>
@@ -95,35 +126,91 @@
       <grandroid enabled="false"/>
     </font-handling>
 
-    <font family="font-cs-CZ">
+    <font family="font-latine">
       <font-name>Kurinto Text</font-name>
       <display-name>Kurinto Text</display-name>
       <filename format="truetype">KurintoText-Rg.ttf</filename>
       <style-decl property="font-weight" value="normal"/>
       <style-decl property="font-style" value="normal"/>
     </font>
-    <font family="font-en">
-      <font-name>Kurinto Text</font-name>
-      <display-name>Kurinto Text</display-name>
-      <filename format="truetype">KurintoText-Rg.ttf</filename>
-      <style-decl property="font-weight" value="normal"/>
-      <style-decl property="font-style" value="normal"/>
-    </font>
-    <font family="font-fa">
-      <font-name>Kurinto Text</font-name>
-      <display-name>Kurinto Text</display-name>
-      <filename format="truetype">KurintoText-Rg.ttf</filename>
-      <style-decl property="font-weight" value="normal"/>
-      <style-decl property="font-style" value="normal"/>
-    </font>
-    <font family="font1">
+    <font family="font-sans">
       <font-name>DejaVu Sans Condensed</font-name>
       <display-name>DejaVu Sans Condensed</display-name>
       <filename format="truetype">DejaVuSansCondensed.ttf</filename>
       <style-decl property="font-weight" value="normal"/>
       <style-decl property="font-style" value="normal"/>
     </font>
-    <font family="font1">
+    <font family="font-sans">
+      <font-name>DejaVu Sans Condensed Bold</font-name>
+      <display-name>DejaVu Sans Condensed</display-name>
+      <filename format="truetype">DejaVuSansCondensed-Bold.ttf</filename>
+      <style-decl property="font-weight" value="bold"/>
+      <style-decl property="font-style" value="normal"/>
+    </font>
+    <font family="font-cs-CZ">
+      <font-name>DejaVu Sans Condensed</font-name>
+      <display-name>DejaVu Sans Condensed</display-name>
+      <filename format="truetype">DejaVuSansCondensed.ttf</filename>
+      <style-decl property="font-weight" value="normal"/>
+      <style-decl property="font-style" value="normal"/>
+    </font>
+    <font family="font-cs-CZ">
+      <font-name>DejaVu Sans Condensed Bold</font-name>
+      <display-name>DejaVu Sans Condensed</display-name>
+      <filename format="truetype">DejaVuSansCondensed-Bold.ttf</filename>
+      <style-decl property="font-weight" value="bold"/>
+      <style-decl property="font-style" value="normal"/>
+    </font>
+    <font family="font-en">
+      <font-name>DejaVu Sans Condensed</font-name>
+      <display-name>DejaVu Sans Condensed</display-name>
+      <filename format="truetype">DejaVuSansCondensed.ttf</filename>
+      <style-decl property="font-weight" value="normal"/>
+      <style-decl property="font-style" value="normal"/>
+    </font>
+    <font family="font-en">
+      <font-name>DejaVu Sans Condensed Bold</font-name>
+      <display-name>DejaVu Sans Condensed</display-name>
+      <filename format="truetype">DejaVuSansCondensed-Bold.ttf</filename>
+      <style-decl property="font-weight" value="bold"/>
+      <style-decl property="font-style" value="normal"/>
+    </font>
+    <font family="font-fa">
+      <font-name>Scheherazade New</font-name>
+      <display-name>Scheherazade New</display-name>
+      <filename format="truetype">ScheherazadeNew-Regular.ttf</filename>
+      <style-decl property="font-weight" value="normal"/>
+      <style-decl property="font-style" value="normal"/>
+    </font>
+    <font family="font-fa">
+      <font-name>Scheherazade New Bold</font-name>
+      <display-name>Scheherazade New</display-name>
+      <filename format="truetype">ScheherazadeNew-Bold.ttf</filename>
+      <style-decl property="font-weight" value="bold"/>
+      <style-decl property="font-style" value="normal"/>
+    </font>
+    <font family="font-dm">
+      <font-name>DejaVu Sans Condensed</font-name>
+      <display-name>DejaVu Sans Condensed</display-name>
+      <filename format="truetype">DejaVuSansCondensed.ttf</filename>
+      <style-decl property="font-weight" value="normal"/>
+      <style-decl property="font-style" value="normal"/>
+    </font>
+    <font family="font-dm">
+      <font-name>DejaVu Sans Condensed Bold</font-name>
+      <display-name>DejaVu Sans Condensed</display-name>
+      <filename format="truetype">DejaVuSansCondensed-Bold.ttf</filename>
+      <style-decl property="font-weight" value="bold"/>
+      <style-decl property="font-style" value="normal"/>
+    </font>
+    <font family="font-fq">
+      <font-name>DejaVu Sans Condensed</font-name>
+      <display-name>DejaVu Sans Condensed</display-name>
+      <filename format="truetype">DejaVuSansCondensed.ttf</filename>
+      <style-decl property="font-weight" value="normal"/>
+      <style-decl property="font-style" value="normal"/>
+    </font>
+    <font family="font-fq">
       <font-name>DejaVu Sans Condensed Bold</font-name>
       <display-name>DejaVu Sans Condensed</display-name>
       <filename format="truetype">DejaVuSansCondensed-Bold.ttf</filename>
@@ -324,17 +411,200 @@
   </colors>
 
   <styles>
+    <style name="div.entry-block-multiple" category="text">
+      <style-decl property="border-bottom" value="3px solid green"/>
+      <style-decl property="padding-bottom" value="15px"/>
+      <style-decl property="margin-bottom" value="15px"/>
+      <style-decl property="display" value="block"/>
+      <style-decl property="line-height" value="1.5em"/>
+    </style>
+    <style name="div.entry-block-single" category="text">
+      <style-decl property="display" value="block"/>
+    </style>
+    <style name="div.entry-name-line-main" category="text">
+      <style-decl property="padding-bottom" value="3px"/>
+      <style-decl property="display" value="inline"/>
+      <style-decl property="color" value="navy"/>
+    </style>
+    <style name="div.entry-name-line-alt" category="text">
+      <style-decl property="padding-bottom" value="3px"/>
+      <style-decl property="padding-left" value="10px"/>
+      <style-decl property="display" value="inline"/>
+      <style-decl property="background-color" value="cyan"/>
+    </style>
+    <style name="div.sense-block-multiple" category="text">
+      <style-decl property="padding-top" value="5px"/>
+      <style-decl property="display" value="block"/>
+    </style>
+    <style name="div.gloss-block" category="text">
+      <style-decl property="padding-top" value="10px"/>
+      <style-decl property="padding-left" value="5px"/>
+      <style-decl property="display" value="inline"/>
+      <style-decl property="padding" value="0px"/>
+      <style-decl property="margin" value="0px"/>
+    </style>
+    <style name="div.gloss-block-indent" category="text">
+      <style-decl property="padding-left" value="10px"/>
+      <style-decl property="display" value="inline"/>
+      <style-decl property="background-color" value="magenta"/>
+      <style-decl property="margin" value="0px"/>
+      <style-decl property="padding" value="0px"/>
+    </style>
+    <style name="div.gloss-block-indent-more" category="text">
+      <style-decl property="padding-left" value="23px"/>
+      <style-decl property="display" value="inline"/>
+      <style-decl property="padding" value="0px"/>
+      <style-decl property="margin" value="0px"/>
+    </style>
+    <style name="div.fields-block" category="text">
+      <style-decl property="padding-left" value="15px"/>
+      <style-decl property="display" value="inline"/>
+    </style>
+    <style name="div.fields-block-indent" category="text">
+      <style-decl property="padding-left" value="28px"/>
+      <style-decl property="display" value="inline"/>
+    </style>
+    <style name="div.example-block" category="text">
+      <style-decl property="padding-top" value="10px"/>
+      <style-decl property="border-bottom" value="1px dotted PrimaryDarkColor"/>
+      <style-decl property="border-radius" value="30px 5px"/>
+      <style-decl property="padding" value="1em"/>
+      <style-decl property="direction" value="RTL"/>
+      <style-decl property="background-color" value="PopupBackgroundColor"/>
+    </style>
+    <style name="div.example-translation-block" category="text">
+      <style-decl property="padding-left" value="5px"/>
+      <style-decl property="direction" value="ltr"/>
+    </style>
+    <style name="div.image-block" category="text">
+      <style-decl property="padding-top" value="10px"/>
+      <style-decl property="padding-left" value="10px"/>
+      <style-decl property="display" value="inline"/>
+    </style>
+    <style name="div.relation-block" category="text">
+      <style-decl property="padding-top" value="10px"/>
+      <style-decl property="display" value="inline"/>
+    </style>
+    <style name="div.relation-line" category="text">
+      <style-decl property="padding-left" value="1em"/>
+      <style-decl property="text-indent" value="-1em"/>
+      <style-decl property="display" value="inline"/>
+    </style>
+    <style name="div.note-block" category="text">
+      <style-decl property="padding-top" value="30px"/>
+    </style>
+    <style name="div.note-line" category="text">
+      <style-decl property="padding-left" value="1em"/>
+      <style-decl property="text-indent" value="-1em"/>
+    </style>
+    <style name="div.field-block" category="text">
+      <style-decl property="padding-top" value="10px"/>
+      <style-decl property="display" value="inline"/>
+    </style>
+    <style name="div.field-line" category="text">
+      <style-decl property="padding-left" value="1em"/>
+      <style-decl property="text-indent" value="-1em"/>
+      <style-decl property="display" value="inline"/>
+    </style>
+    <style name="div.subentry-block" category="text">
+      <style-decl property="padding-top" value="20px"/>
+      <style-decl property="border-top" value="3px solid green"/>
+      <style-decl property="display" value="block"/>
+    </style>
+    <style name="div.pronunciation-block" category="text">
+      <style-decl property="padding-top" value="4px"/>
+      <style-decl property="padding-bottom" value="8px"/>
+      <style-decl property="display" value="inline"/>
+    </style>
+    <style name="div.top-padding" category="text">
+      <style-decl property="padding-top" value="10px"/>
+    </style>
+    <style name="span.part-of-speech" category="text">
+      <style-decl property="font-style" value="normal"/>
+      <style-decl property="color" value="TextColor3"/>
+      <style-decl property="font-size" value="80%"/>
+    </style>
     <style name="ui.alphabet-button-en" category="ui">
       <style-decl property="font-family" value="font-en"/>
       <style-decl property="font-size" value="15sp"/>
       <style-decl property="font-weight" value="bold"/>
-      <style-decl property="text-transform" value="uppercase"/>
+      <style-decl property="text-transform" value="capitalize"/>
     </style>
-    <style name="ui.alphabet-button-cs-CZ" category="ui">
-      <style-decl property="font-family" value="font-cs-CZ"/>
-      <style-decl property="font-size" value="15sp"/>
+    <style name="ui.list-item-title-en" category="ui">
+      <style-decl property="font-family" value="font-en"/>
+      <style-decl property="font-size" value="18sp"/>
       <style-decl property="font-weight" value="bold"/>
-      <style-decl property="text-transform" value="uppercase"/>
+    </style>
+    <style name="ui.viewer-title-fa" category="ui">
+      <style-decl property="font-family" value="font-fa"/>
+      <style-decl property="font-size" value="20sp"/>
+      <style-decl property="font-weight" value="bold"/>
+      <style-decl property="background-color" value="TitleBackgroundColor"/>
+    </style>
+    <style name="ui.list-item-subtitle-fa" category="ui">
+      <style-decl property="font-family" value="font-fa"/>
+      <style-decl property="font-size" value="18sp"/>
+      <style-decl property="font-weight" value="bold"/>
+    </style>
+    <style name="ui.alphabet-button-fa" category="ui">
+      <style-decl property="font-family" value="font-fa"/>
+      <style-decl property="font-size" value="18sp"/>
+      <style-decl property="font-weight" value="bold"/>
+    </style>
+    <style name="span.example-text-fa" category="text">
+      <style-decl property="font-family" value="font-fa"/>
+      <style-decl property="font-size" value="100%"/>
+      <style-decl property="font-weight" value="bold"/>
+      <style-decl property="color" value="TextColor"/>
+    </style>
+    <style name="ui.list-item-title-cs-CZ" category="ui">
+      <style-decl property="font-family" value="font-cs-CZ"/>
+      <style-decl property="font-size" value="18sp"/>
+      <style-decl property="font-weight" value="bold"/>
+      <style-decl property="text-transform" value="capitalize"/>
+    </style>
+    <style name="span.gloss-cs-CZ" category="text">
+      <style-decl property="font-family" value="font-cs-CZ"/>
+      <style-decl property="color" value="TextColor5"/>
+      <style-decl property="font-style" value="italic"/>
+    </style>
+    <style name="span.example-translation-cs-CZ" category="text">
+      <style-decl property="font-family" value="font-cs-CZ"/>
+      <style-decl property="font-size" value="90%"/>
+      <style-decl property="color" value="TextColor1"/>
+    </style>
+    <style name="span.note-cs-CZ" category="text">
+      <style-decl property="font-family" value="font-cs-CZ"/>
+      <style-decl property="font-size" value="90%"/>
+      <style-decl property="color" value="TextColor5"/>
+    </style>
+    <style name="span.field-cs-CZ" category="text">
+      <style-decl property="font-family" value="font-cs-CZ"/>
+      <style-decl property="font-size" value="95%"/>
+      <style-decl property="color" value="TextColor5"/>
+    </style>
+    <style name="ui.list-item-title-dm" category="ui">
+      <style-decl property="font-family" value="font-dm"/>
+      <style-decl property="font-size" value="16sp"/>
+    </style>
+    <style name="ui.list-item-subtitle-dm" category="ui">
+      <style-decl property="font-family" value="font-dm"/>
+      <style-decl property="font-size" value="14sp"/>
+      <style-decl property="color" value="TextColor3"/>
+    </style>
+    <style name="span.gloss-dm" category="text">
+      <style-decl property="font-family" value="font-dm"/>
+      <style-decl property="font-size" value="80%"/>
+      <style-decl property="color" value="TextColor3"/>
+      <style-decl property="font-style" value="normal"/>
+    </style>
+    <style name="ui.list-item-subtitle-fq" category="ui">
+      <style-decl property="font-family" value="font-fq"/>
+      <style-decl property="font-size" value="16sp"/>
+      <style-decl property="color" value="AccentColor"/>
+    </style>
+    <style name="span.gloss-fq" category="text">
+      <style-decl property="display" value="none"/>
     </style>
   </styles>
 
@@ -350,11 +620,11 @@
       <trait name="indexed" value="false"/>
       <sort-method type="icu-rules">
         <ignore-chars>- = ~ * ( ) [ ] ¡ ¿</ignore-chars>
-        <rules>&amp;ا &lt; آ &lt; اً &lt; أ &lt; إ &lt; اَ &lt; اٍ &lt; اُ &lt; اْ &lt; اٰ &lt; اٌ
-&amp;ک &lt; ك
-&amp;و &lt; و &lt; ؤ &lt; ـو
-&amp;ه &lt; ۀ &lt; ة
-&amp;ی &lt; ي &lt; ى &lt; ي &lt; ئ</rules>
+        <rules>&amp;ا = آ = اً = أ = إ = اَ = اٍ = اُ = اْ = اٰ = اٌ
+&amp;ک = ك
+&amp;و = و = ؤ = ـو
+&amp;ه = ۀ = ة
+&amp;ی = ي = ى = ي = ئ</rules>
       </sort-method>
       <alphabet>ا ب پ ت ث ج چ ح خ د ذ ر ز ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن و ه ی</alphabet>
     </writing-system>
@@ -371,9 +641,13 @@
         <ignore-chars>- = ~ * ( ) [ ] ¡ ¿</ignore-chars>
       </sort-method>
       <alphabet>a b c d e f g h i j k l m n o p q r s t u v w x y z</alphabet>
+
+      <features type="writing-system">
+        <feature name="summary-gloss" value="true"/>
+      </features>
     </writing-system>
 
-    <writing-system code="cs-CZ" type="gloss">
+    <writing-system code="cs-CZ" type="main|gloss">
       <display-names>
         <form lang="default">Czech</form>
         <form lang="cs">Čeština</form>
@@ -390,13 +664,47 @@
         <feature name="summary-gloss" value="true"/>
       </features>
     </writing-system>
+
+    <writing-system code="dm" type="gloss">
+      <display-names>
+        <form lang="default">Domains</form>
+        <form lang="cs">Sém. domény</form>
+      </display-names>
+      <font-family>font-dm</font-family>
+      <trait name="text-direction" value="LTR"/>
+      <trait name="indexed" value="true"/>
+      <sort-method type="default">
+        <ignore-chars>- = ~ * ( ) [ ] ¡ ¿</ignore-chars>
+      </sort-method>
+      <alphabet>1 2 3 4 5 6 7 8 9</alphabet>
+
+      <features type="writing-system">
+        <feature name="summary-gloss" value="true"/>
+      </features>
+    </writing-system>
   </writing-systems>
 
   <fields>
+    <field  type="complex" name="analytický predikát" show="true">
+      <label show="true">
+        <translation lang="default">Analytický predikát:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
     <field  type="complex" name="Arabic compound" show="true">
       <label show="true">
         <translation lang="default">Arabic compound:</translation>
         <translation lang="cs">Arabské kompozitum:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="complex" name="arabské kompozitum" show="true">
+      <label show="true">
+        <translation lang="default">Arabské kompozitum:</translation>
       </label>
       <field-feature name="before-item" value=""/>
       <field-feature name="after-item" value=""/>
@@ -429,6 +737,14 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
+    <field  type="complex" name="derivace" show="true">
+      <label show="true">
+        <translation lang="default">Derivace:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
     <field  type="complex" name="Derivative" show="true">
       <label show="true">
         <translation lang="default">Derivative:</translation>
@@ -447,10 +763,58 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
+    <field  type="complex" name="kolokace" show="true">
+      <label show="true">
+        <translation lang="default">Kolokace:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="complex" name="kompozitum" show="true">
+      <label show="true">
+        <translation lang="default">Kompozitum:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="complex" name="nespecifikovaný komplexní tvar" show="true">
+      <label show="true">
+        <translation lang="default">Nespecifikovaný komplexní tvar:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="complex" name="rčení a přísloví" show="true">
+      <label show="true">
+        <translation lang="default">Rčení a přísloví:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="complex" name="sloveso s odlučitelnou předponou" show="true">
+      <label show="true">
+        <translation lang="default">Sloveso s odlučitelnou předponou:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
     <field  type="complex" name="Unspecified Complex Form" show="true">
       <label show="true">
         <translation lang="default">Unspecified Complex Form:</translation>
         <translation lang="cs">Nespecifikovaný komplexní tvar:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="complex" name="zkrácenina" show="true">
+      <label show="true">
+        <translation lang="default">Zkrácenina:</translation>
       </label>
       <field-feature name="before-item" value=""/>
       <field-feature name="after-item" value=""/>
@@ -465,8 +829,8 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="field" name="Frekvency" show="true">
-      <label show="true">
+    <field  type="field" name="Frequency" show="true">
+      <label show="false">
         <translation lang="default">Frequency:</translation>
         <translation lang="cs">Frekvence:</translation>
       </label>
@@ -482,6 +846,14 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
+    <field  type="field" name="literal-meaning" show="true">
+      <label show="true">
+        <translation lang="default">Lit:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
     <field  type="field" name="summary" show="false">
       <label show="true">
         <translation lang="default">Summary:</translation>
@@ -490,9 +862,25 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
+    <field  type="field" name="varianta-typ" show="true">
+      <label show="false">
+        <translation lang="default">var.:</translation>
+      </label>
+      <field-feature name="before-item" value="("/>
+      <field-feature name="after-item" value=")"/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
     <field  type="note" name="anthropology" show="false">
       <label show="true">
         <translation lang="default">Anthropology:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="note" name="bibliography" show="true">
+      <label show="true">
+        <translation lang="default">Bibliography:</translation>
       </label>
       <field-feature name="before-item" value=""/>
       <field-feature name="after-item" value=""/>
@@ -506,13 +894,16 @@
       <field-feature name="label-position" value="beside"/>
     </field>
     <field  type="note" name="grammar" show="true">
-      <label show="true">
+      <label show="false">
         <translation lang="default">Grammar:</translation>
         <translation lang="cs">Gramatika:</translation>
       </label>
       <field-feature name="before-item" value=""/>
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
+      <field-move origin="before-senses" action="none"/>
+      <field-move origin="in-senses" action="none"/>
+      <field-move origin="after-senses" action="none"/>
     </field>
     <field  type="note" name="reference" show="true">
       <label show="true">
@@ -540,16 +931,28 @@
       <field-feature name="label-position" value="beside"/>
     </field>
     <field  type="pronunciation" show="true">
-      <label show="true">
+      <label show="false">
+        <translation lang="default"></translation>
       </label>
       <field-feature name="before-item" value=""/>
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
+      <field-move origin="before-senses" action="none"/>
+      <field-move origin="in-senses" action="none"/>
+      <field-move origin="after-senses" action="none"/>
     </field>
     <field  type="relation" name="Antonym" show="true">
       <label show="true">
         <translation lang="default">Antonym:</translation>
         <translation lang="cs">Antonymum:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="relation" name="antonymum" show="true">
+      <label show="true">
+        <translation lang="default">Antonymum:</translation>
       </label>
       <field-feature name="before-item" value=""/>
       <field-feature name="after-item" value=""/>
@@ -573,10 +976,35 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
+    <field  type="relation" name="obecný" show="true">
+      <label show="true">
+        <translation lang="default">Obecný:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
     <field  type="relation" name="Opposite Verb Genus" show="true">
       <label show="true">
         <translation lang="default">Opposite Verb Genus:</translation>
         <translation lang="cs">Rodový protějšek:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="relation" name="ref" show="true">
+      <label show="true">
+        <translation lang="default">See also:</translation>
+        <translation lang="fr">Voir aussi :</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="relation" name="rodový protějšek " show="true">
+      <label show="true">
+        <translation lang="default">Rodový protějšek :</translation>
       </label>
       <field-feature name="before-item" value=""/>
       <field-feature name="after-item" value=""/>
@@ -591,6 +1019,34 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
+    <field  type="relation" name="specifický" show="true">
+      <label show="true">
+        <translation lang="default">Specific:</translation>
+        <translation lang="cs">Specifický:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+      <field-move origin="before-senses" action="none"/>
+      <field-move origin="in-senses" action="none"/>
+      <field-move origin="after-senses" action="none"/>
+    </field>
+    <field  type="relation" name="srovnej" show="true">
+      <label show="true">
+        <translation lang="default">Srovnej:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="relation" name="synonyma" show="true">
+      <label show="true">
+        <translation lang="default">Synonyma:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
     <field  type="relation" name="Synonyms" show="true">
       <label show="true">
         <translation lang="default">Synonyms:</translation>
@@ -600,10 +1056,21 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
+    <field  type="relation" name="varianta" show="true">
+      <label show="false">
+        <translation lang="default">Varianta:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+      <field-move origin="before-senses" action="none"/>
+      <field-move origin="in-senses" action="none"/>
+      <field-move origin="after-senses" action="none"/>
+    </field>
     <field  type="variant" name="(Default)" show="true">
-      <label show="true">
-        <translation lang="default">Variant:</translation>
-        <translation lang="cs">Varianta:</translation>
+      <label show="false">
+        <translation lang="default">var.:</translation>
+        <translation lang="cs">var.:</translation>
       </label>
       <field-feature name="before-item" value=""/>
       <field-feature name="after-item" value=""/>
@@ -625,10 +1092,34 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
+    <field  type="variant" name="alternativní kategoriální sloveso" show="true">
+      <label show="true">
+        <translation lang="default">Alternativní kategoriální sloveso:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
     <field  type="variant" name="Arabic plural" show="true">
       <label show="true">
         <translation lang="default">Arabic plural:</translation>
         <translation lang="cs">Arabský plurál:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="variant" name="arabský komparativ, superlativ" show="true">
+      <label show="true">
+        <translation lang="default">Arabský komparativ, superlativ:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="variant" name="arabský plurál" show="true">
+      <label show="true">
+        <translation lang="default">Arabský plurál:</translation>
       </label>
       <field-feature name="before-item" value=""/>
       <field-feature name="after-item" value=""/>
@@ -643,6 +1134,30 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
+    <field  type="variant" name="hovorová varianta" show="true">
+      <label show="true">
+        <translation lang="default">Hovorová varianta:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="variant" name="nespecifikovaná varianta" show="true">
+      <label show="true">
+        <translation lang="default">Nespecifikovaná varianta:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="variant" name="Past" show="true">
+      <label show="true">
+        <translation lang="default">Past:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
     <field  type="variant" name="Plural" show="true">
       <label show="true">
         <translation lang="default">Plural:</translation>
@@ -652,10 +1167,38 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
+    <field  type="variant" name="plurál" show="true">
+      <label show="true">
+        <translation lang="default">Plural:</translation>
+        <translation lang="cs">Plurál:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+      <field-move origin="before-senses" action="none"/>
+      <field-move origin="in-senses" action="none"/>
+      <field-move origin="after-senses" action="none"/>
+    </field>
+    <field  type="variant" name="pravopisná varianta" show="true">
+      <label show="true">
+        <translation lang="default">Pravopisná varianta:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
     <field  type="variant" name="Present" show="true">
       <label show="true">
         <translation lang="default">Present:</translation>
         <translation lang="cs">Prézens:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="variant" name="prézentní kmen" show="true">
+      <label show="true">
+        <translation lang="default">Prézentní kmen:</translation>
       </label>
       <field-feature name="before-item" value=""/>
       <field-feature name="after-item" value=""/>
@@ -674,6 +1217,14 @@
       <label show="true">
         <translation lang="default">Unspecified Variant:</translation>
         <translation lang="cs">Nespecifikovaná varianta:</translation>
+      </label>
+      <field-feature name="before-item" value=""/>
+      <field-feature name="after-item" value=""/>
+      <field-feature name="label-position" value="beside"/>
+    </field>
+    <field  type="variant" name="zaměnitelná předložka" show="true">
+      <label show="true">
+        <translation lang="default">Zaměnitelná předložka:</translation>
       </label>
       <field-feature name="before-item" value=""/>
       <field-feature name="after-item" value=""/>
@@ -1495,6 +2046,10 @@
     <image width="72" height="72">drawable-hdpi\ic_launcher.png</image>
     <image width="96" height="96">drawable-xhdpi\ic_launcher.png</image>
     <image width="144" height="144">drawable-xxhdpi\ic_launcher.png</image>
+  </images>
+
+  <images type="illustration">
+    <image width="2362" height="1384">ghesm-studna.jpg</image>
   </images>
 
   <adaptive-icon>
