@@ -5,7 +5,7 @@
 	version="3.0">
    
   <p:input port="source" primary="true">
-  	<p:document href="../Persian-Czech%20Dictionary/Persian-Czech%20Dictionary.appDef" content-type="xml" />
+  	<p:document href="../dictionaries/FACS/FACS.appDef" content-type="xml" />
   </p:input>
    
 	<p:output port="result" serialization="map{'indent' : true()}" />
@@ -32,8 +32,8 @@
 	<p:declare-step type="dlbab:rename-all-files" name="renaming-all-files">
 		<p:input port="source" sequence="true"/>
 		<p:output port="result" sequence="true"/>
-		<dlbab:rename-files input-directory="../../lift-to-tei/Dictionary/resources/images/entries" />
-		<dlbab:rename-files input-directory="../../lift-to-tei/Dictionary/resources/audio" />
+		<dlbab:rename-files input-directory="../../lediir/lift-to-tei/Dictionary/resources/images/entries" />
+		<dlbab:rename-files input-directory="../../lediir/lift-to-tei/Dictionary/resources/audio" />
 	</p:declare-step>
 
 	<dlbab:rename-all-files>
