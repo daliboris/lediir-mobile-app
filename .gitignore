@@ -1,0 +1,5 @@
+*.ttf
+*.lift
+*.lift-ranges
+.vs/
+*.code-workspace
