@@ -3,3 +3,4 @@
 *.lift-ranges
 .vs/
 *.code-workspace
+local*
