@@ -8,7 +8,7 @@
   <app-name lang="cs">Persko-český slovník</app-name>
   <apk-filename append-version="true">Persian-Czech_Dictionary.apk</apk-filename>
   <package>cz.cas.soc.eldi.dictionary.facs</package>
-  <version code="4" name="4.0"/>
+  <version code="5" name="5.0"/>
   <multiple-apks value="false"/>
   <android-sdk min="23"/>
   <install-location value="preferExternal"/>
