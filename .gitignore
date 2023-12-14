@@ -1,6 +1,7 @@
+build
+.vs/
 *.ttf
 *.lift
 *.lift-ranges
-.vs/
 *.code-workspace
 local*
