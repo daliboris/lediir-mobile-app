@@ -1,0 +1,9 @@
+<i>Elektronická lexikální databáze indoíránských jazyků, persko-český modul</i>
+
+<u>Tato verze aplikace je zkušební a je určena výhradně pro interní potřebu řešitelského týmu projektu.</u>
+
+Copyright © 2023, Sociologický ústav AV ČR, Filozofická fakulta UK
+
+<b>Životnost testovací verze skončila.</b>
+
+<b>Stáhněte si nejnovější verzi mobilní aplikace.</b>
