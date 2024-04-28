@@ -3,7 +3,7 @@
 <u>Tato verze aplikace je zkušební a je určena výhradně pro interní potřebu řešitelského týmu projektu.</u>
 
 
-Copyright © 2023, Sociologický ústav AV ČR, Filozofická fakulta UK
+Copyright © 2024, Sociologický ústav AV ČR, Filozofická fakulta UK
 
 Autorský tým: 
 
@@ -22,13 +22,13 @@ Tento slovník byl podpořen projektem TA ČR číslo [TL03000369](https://www.i
 
 Toto dílo podléhá licenci [Creative Commons Uveďte původ-Neužívejte komerčně-Nezpracovávejte 4.0 Mezinárodní License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 
-Copyright © 2023, Sociologický ústav AV ČR, Filozofická fakulta UK
+Copyright © 2024, Sociologický ústav AV ČR, Filozofická fakulta UK
 
 Webové [stránky projektu](https://eldi.soc.cas.cz) s detaily.
 
 V případě technických problémů s aplikací kontaktujte [Borise Lehečku](mailto:boris@daliboris.cz).
 
 
-<b>Jak citovat:</b> Darina Vystrčilová, Mona Khademi, Zuzana Kříhová et al.: Elektronická lexikální databáze indoíránských jazyků, persko-český modul. Praha 2023. Verze dat: 2022-11-23. Dostupné z WWW: <https://play.google.com/store/apps/details?id=cz.cas.soc.eldi.dictionary.facs&hl=cs>
+<b>Jak citovat:</b> Darina Vystrčilová, Mona Khademi, Zuzana Kříhová et al.: Elektronická lexikální databáze indoíránských jazyků, persko-český modul. Praha 2024. Verze dat: 2024-04-12. Dostupné z WWW: [https://play.google.com/store/apps/details?id=cz.cas.soc.eldi.dictionary.facs&hl=cs](https://play.google.com/store/apps/details?id=cz.cas.soc.eldi.dictionary.facs&hl=cs)
 
 Aplikace: %app-name%, verze %version-name% (%program-type%), vytvořeno s pomocí programu [Dictionary App Builder](https://software.sil.org/dictionaryappbuilder/), verze %program-version%.
