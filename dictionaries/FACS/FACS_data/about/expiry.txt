@@ -2,7 +2,7 @@
 
 <u>Tato verze aplikace je zkušební a je určena výhradně pro interní potřebu řešitelského týmu projektu.</u>
 
-Copyright © 2023, Sociologický ústav AV ČR, Filozofická fakulta UK
+Copyright © 2024, Sociologický ústav AV ČR, Filozofická fakulta UK
 
 <b>Životnost testovací verze skončila.</b>
 

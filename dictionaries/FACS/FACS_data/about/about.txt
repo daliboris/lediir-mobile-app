@@ -1,34 +1,38 @@
-<i>Elektronická lexikální databáze indoíránských jazyků, persko-český modul</i>
-
-<u>Tato verze aplikace je zkušební a je určena výhradně pro interní potřebu řešitelského týmu projektu.</u>
-
-
-Copyright © 2024, Sociologický ústav AV ČR, Filozofická fakulta UK
 
 Autorský tým: 
 
 SOÚ AV ČR: Darina Vystrčilová, Mona Khademi, Radka Taucová,
 FF UK: Zuzana Kříhová, Ľubomír Novák, Bořivoj Nachtmann
 
-Jazykové korektury češtiny: Kristýna Přibylová
 Odborný konzultant: Michal Škrabal
-Technická spolupráce: Boris Lehečka, Milan Paučula
-Vytvoření jazykových korpusů <i>Araneum Persicum</i>: Vladimír Benko
-Další spolupráce: Peter Fajnor, Martina Hartmannová, Filip Lachmann, Zuzana Řezníčková, Martin Vávra
 
-Lexikální databáze je zpracovávána v programu [FLEx](https://software.sil.org/fieldworks) (FieldWorks Language Explorer) společnosti [SIL International](https://www.sil.org).
+Vývoj a úpravy aplikací: Boris Lehečka
 
-Tento slovník byl podpořen projektem TA ČR číslo [TL03000369](https://www.isvavai.cz/cep?ss=detail&n=0&h=TL03000369).
+Vytvoření jazykových korpusů [Araneum Persicum](http://unesco.uniba.sk/guest/index.html): Vladimír Benko
 
-Toto dílo podléhá licenci [Creative Commons Uveďte původ-Neužívejte komerčně-Nezpracovávejte 4.0 Mezinárodní License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+Jazykové korektury češtiny: Kristýna Přibylová
 
-Copyright © 2024, Sociologický ústav AV ČR, Filozofická fakulta UK
-
-Webové [stránky projektu](https://eldi.soc.cas.cz) s detaily.
-
-V případě technických problémů s aplikací kontaktujte [Borise Lehečku](mailto:boris@daliboris.cz).
+Technická spolupráce: Milan Paučula
 
 
-<b>Jak citovat:</b> Darina Vystrčilová, Mona Khademi, Zuzana Kříhová et al.: Elektronická lexikální databáze indoíránských jazyků, persko-český modul. Praha 2024. Verze dat: 2024-04-12. Dostupné z WWW: [https://play.google.com/store/apps/details?id=cz.cas.soc.eldi.dictionary.facs&hl=cs](https://play.google.com/store/apps/details?id=cz.cas.soc.eldi.dictionary.facs&hl=cs)
+Poděkování, další spolupráce: Ann Bush, Peter Fajnor, Martina Hartmanová, Filip Lachmann, Zuzana Řezníčková, Přemysl Skopal, Martin Vávra, Ken Zook
+
+Pro zpracování dat je využíván program [FLEx](https://software.sil.org/fieldworks) (FieldWorks Language Explorer) společnosti [SIL International](https://www.sil.org).
+
+Tento [projekt](https://www.isvavai.cz/cep?ss=detail&n=0&h=TL03000369) je spolufinancován se státní podporou Technologické agentury ČR v rámci Programu Éta.
+
+Copyright © 2024, Sociologický ústav AV ČR, v. v. i., a Filozofická fakulta Univerzity Karlovy (databáze a slovníková data)
+
+Pro další informace navštivte [webové stránky](https://eldi.soc.cas.cz) projektu <i>Elektronická lexikální databáze indoíránských jazyků: persko-český modul</i>.
+
+V případě technických problémů s aplikací kontaktujte [Borise Lehečku](mailto:eldi@daliboris.cz).
+
+</i>Upozorňujeme na nepraktické řazení výsledků hledání u slov, která se vyskytují se v mnoha komplexních výrazech a poznámkách; na zlepšení pracujeme.</i>
+
+<b>Jak citovat:</b>
+
+VYSTRČILOVÁ, Darina; KHADEMI, Mona; KŘÍHOVÁ, Zuzana; NACHTMANN, Bořivoj; TAUCOVÁ, Radka et al. %app-name%, verze %version-name%. Praha 2024. Verze dat: %data-version%. Dostupné z: [https://play.google.com/store/apps/details?id=cz.cas.soc.eldi.dictionary.facs&hl=cs](https://play.google.com/store/apps/details?id=cz.cas.soc.eldi.dictionary.facs&hl=cs)
 
 Aplikace: %app-name%, verze %version-name% (%program-type%), vytvořeno s pomocí programu [Dictionary App Builder](https://software.sil.org/dictionaryappbuilder/), verze %program-version%.
+
+<img src="illustrations/logo-sou.png" title="Sociologický ústav AV ČR, v. v. i." /> <img src="illustrations/logo-cuni.png" title="Filozofická fakulta Univerzity Karlovy" /> <img src="illustrations/logo-tacr.png" title="Technologická agentura ČR"/>
