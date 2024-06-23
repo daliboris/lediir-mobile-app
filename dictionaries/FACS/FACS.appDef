@@ -1,37 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <app-definition type="DAB" program-version="11.0.3">
   <project-name>Persian-Czech Dictionary</project-name>
   <project-description>Persko-český slovník, mobilní aplikace</project-description>
   <project-group>LeDIIR</project-group>
 
-  <app-name lang="default">Persian-Czech Dictionary</app-name>
-  <app-name lang="cs">Persko-český slovník</app-name>
+  <app-name lang="default">Persko-český mobilní slovník</app-name>
+  <app-name lang="en">Persian-Czech Mobile Dictionary</app-name>
   <apk-filename append-version="true">Persian-Czech_Dictionary.apk</apk-filename>
   <package>cz.cas.soc.eldi.dictionary.facs</package>
-  <version code="5" name="5.0"/>
+  <version code="9" name="9.0"/>
   <multiple-apks value="false"/>
   <android-sdk min="23"/>
   <install-location value="preferExternal"/>
   <ipa-filename append-version="true">Persian-Czech_Dictionary.ipa</ipa-filename>
-  <ipa-version build="1" name="1.0"/>
+  <ipa-version build="9" name="9.0"/>
   <ipa-asset-filename>Persian-Czech_Dictionary.zip</ipa-asset-filename>
-  <ipa-container-url></ipa-container-url>
+  <ipa-container-url/>
   <ipa-app-type>dedicated</ipa-app-type>
   <ipa-container-audio>false</ipa-container-audio>
 
   <pwa-manifest name="" short-name="">
-    <pwa-text lang="null" direction="LTR"/>
+    <pwa-text lang="" direction="LTR"/>
   </pwa-manifest>
 
   <lexicon-db type="lift">LeDIIR-FACS-mobile.lift</lexicon-db>
   <source>V:\Projekty\Github\Daliboris\lediir\lift-to-tei\Dictionary\LeDIIR-FACS-mobile.lift</source>
 
+  <!-- TODO: replace by AppBuilder-update-appDef.xpl -->
   <signing>
-    <keystore><!-- TODO: path to keystore file --></keystore>
-    <keystore-password><!-- TODO: keystore password  --></keystore-password>
-   <alias><!-- TODO: alias  --></alias>
-   <alias-password><!-- TODO: alias password  --></alias-password>
-  </signing>
+  <keystore/>
+  <keystore-password/>
+  <alias/>
+  <alias-password/>
+ </signing>
+  
+  <resigning>
+    <signing-identity hash=""/>
+    <provisioning-profile/>
+  </resigning>
 
   <publishing mode="manual">
   </publishing>
@@ -84,7 +90,7 @@
     <feature name="replace-underscore-space" value="true"/>
     <feature name="format-homonym-number" value="superscript"/>
     <feature name="omit-index-items-starting-with" value="true"/>
-    <feature name="omit-index-items-starting-with-chars" value="? ( ) [ ] &quot; , ; * @ # | { }"/>
+    <feature name="omit-index-items-starting-with-chars" value="? ( ) [ ] &#34; , ; * @ # | { }"/>
     <feature name="omit-index-items-starting-with-digit" value="false"/>
     <feature name="omit-index-items-longer-than" value="false"/>
     <feature name="omit-index-items-longer-than-number" value="30"/>
@@ -629,24 +635,6 @@
       <alphabet>ا ب پ ت ث ج چ ح خ د ذ ر ز ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن و ه ی</alphabet>
     </writing-system>
 
-    <writing-system code="en" type="main|gloss">
-      <display-names>
-        <form lang="default">English</form>
-        <form lang="cs">Angličtina</form>
-      </display-names>
-      <font-family>font-en</font-family>
-      <trait name="text-direction" value="LTR"/>
-      <trait name="indexed" value="true"/>
-      <sort-method type="default">
-        <ignore-chars>- = ~ * ( ) [ ] ¡ ¿</ignore-chars>
-      </sort-method>
-      <alphabet>a b c d e f g h i j k l m n o p q r s t u v w x y z</alphabet>
-
-      <features type="writing-system">
-        <feature name="summary-gloss" value="true"/>
-      </features>
-    </writing-system>
-
     <writing-system code="cs-CZ" type="main|gloss">
       <display-names>
         <form lang="default">Czech</form>
@@ -685,7 +673,7 @@
   </writing-systems>
 
   <fields>
-    <field  type="complex" name="analytický predikát" show="true">
+    <field type="complex" name="analytický predikát" show="true">
       <label show="true">
         <translation lang="default">Analytický predikát:</translation>
       </label>
@@ -693,7 +681,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="complex" name="Arabic compound" show="true">
+    <field type="complex" name="Arabic compound" show="true">
       <label show="true">
         <translation lang="default">Arabic compound:</translation>
         <translation lang="cs">Arabské kompozitum:</translation>
@@ -702,7 +690,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="complex" name="arabské kompozitum" show="true">
+    <field type="complex" name="arabské kompozitum" show="true">
       <label show="true">
         <translation lang="default">Arabské kompozitum:</translation>
       </label>
@@ -710,7 +698,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="complex" name="Collocate" show="true">
+    <field type="complex" name="Collocate" show="true">
       <label show="true">
         <translation lang="default">Collocate:</translation>
         <translation lang="cs">Kolokace:</translation>
@@ -719,7 +707,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="complex" name="Complex predicate / Compound Verb" show="true">
+    <field type="complex" name="Complex predicate / Compound Verb" show="true">
       <label show="true">
         <translation lang="default">Complex predicate / Compound Verb:</translation>
         <translation lang="cs">Komplexní predikát / složené sloveso:</translation>
@@ -728,7 +716,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="complex" name="Compound" show="true">
+    <field type="complex" name="Compound" show="true">
       <label show="true">
         <translation lang="default">Compound:</translation>
         <translation lang="cs">Kompozitum:</translation>
@@ -737,7 +725,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="complex" name="derivace" show="true">
+    <field type="complex" name="derivace" show="true">
       <label show="true">
         <translation lang="default">Derivace:</translation>
       </label>
@@ -745,7 +733,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="complex" name="Derivative" show="true">
+    <field type="complex" name="Derivative" show="true">
       <label show="true">
         <translation lang="default">Derivative:</translation>
         <translation lang="cs">Derivace:</translation>
@@ -754,7 +742,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="complex" name="Idiom" show="true">
+    <field type="complex" name="Idiom" show="true">
       <label show="true">
         <translation lang="default">Idiom:</translation>
         <translation lang="cs">Idiom:</translation>
@@ -763,7 +751,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="complex" name="kolokace" show="true">
+    <field type="complex" name="kolokace" show="true">
       <label show="true">
         <translation lang="default">Kolokace:</translation>
       </label>
@@ -771,7 +759,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="complex" name="kompozitum" show="true">
+    <field type="complex" name="kompozitum" show="true">
       <label show="true">
         <translation lang="default">Kompozitum:</translation>
       </label>
@@ -779,7 +767,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="complex" name="nespecifikovaný komplexní tvar" show="true">
+    <field type="complex" name="nespecifikovaný komplexní tvar" show="true">
       <label show="true">
         <translation lang="default">Nespecifikovaný komplexní tvar:</translation>
       </label>
@@ -787,7 +775,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="complex" name="rčení a přísloví" show="true">
+    <field type="complex" name="rčení a přísloví" show="true">
       <label show="true">
         <translation lang="default">Rčení a přísloví:</translation>
       </label>
@@ -795,7 +783,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="complex" name="sloveso s odlučitelnou předponou" show="true">
+    <field type="complex" name="sloveso s odlučitelnou předponou" show="true">
       <label show="true">
         <translation lang="default">Sloveso s odlučitelnou předponou:</translation>
       </label>
@@ -803,7 +791,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="complex" name="Unspecified Complex Form" show="true">
+    <field type="complex" name="Unspecified Complex Form" show="true">
       <label show="true">
         <translation lang="default">Unspecified Complex Form:</translation>
         <translation lang="cs">Nespecifikovaný komplexní tvar:</translation>
@@ -812,7 +800,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="complex" name="zkrácenina" show="true">
+    <field type="complex" name="zkrácenina" show="true">
       <label show="true">
         <translation lang="default">Zkrácenina:</translation>
       </label>
@@ -820,7 +808,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="field" name="Domain" show="true">
+    <field type="field" name="Domain" show="true">
       <label show="true">
         <translation lang="default">Domain:</translation>
         <translation lang="cs">Doména:</translation>
@@ -829,7 +817,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="field" name="Frequency" show="true">
+    <field type="field" name="Frequency" show="true">
       <label show="false">
         <translation lang="default">Frequency:</translation>
         <translation lang="cs">Frekvence:</translation>
@@ -838,7 +826,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="field" name="languagenotes" show="false">
+    <field type="field" name="languagenotes" show="false">
       <label show="true">
         <translation lang="default">Languagenotes:</translation>
       </label>
@@ -846,7 +834,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="field" name="literal-meaning" show="true">
+    <field type="field" name="literal-meaning" show="true">
       <label show="true">
         <translation lang="default">Lit:</translation>
       </label>
@@ -854,7 +842,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="field" name="summary" show="false">
+    <field type="field" name="summary" show="false">
       <label show="true">
         <translation lang="default">Summary:</translation>
       </label>
@@ -862,7 +850,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="field" name="varianta-typ" show="true">
+    <field type="field" name="varianta-typ" show="true">
       <label show="false">
         <translation lang="default">var.:</translation>
       </label>
@@ -870,7 +858,7 @@
       <field-feature name="after-item" value=")"/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="note" name="anthropology" show="false">
+    <field type="note" name="anthropology" show="false">
       <label show="true">
         <translation lang="default">Anthropology:</translation>
       </label>
@@ -878,7 +866,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="note" name="bibliography" show="true">
+    <field type="note" name="bibliography" show="true">
       <label show="true">
         <translation lang="default">Bibliography:</translation>
       </label>
@@ -886,14 +874,14 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="note" name="encyclopedic" show="false">
+    <field type="note" name="encyclopedic" show="false">
       <label show="false">
       </label>
       <field-feature name="before-item" value=""/>
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="note" name="grammar" show="true">
+    <field type="note" name="grammar" show="true">
       <label show="false">
         <translation lang="default">Grammar:</translation>
         <translation lang="cs">Gramatika:</translation>
@@ -905,7 +893,7 @@
       <field-move origin="in-senses" action="none"/>
       <field-move origin="after-senses" action="none"/>
     </field>
-    <field  type="note" name="reference" show="true">
+    <field type="note" name="reference" show="true">
       <label show="true">
         <translation lang="default">Reference:</translation>
         <translation lang="cs">Viz:</translation>
@@ -914,7 +902,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="note" name="semantics" show="false">
+    <field type="note" name="semantics" show="false">
       <label show="true">
         <translation lang="default">Semantics:</translation>
       </label>
@@ -922,7 +910,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="note" name="sociolinguistics" show="false">
+    <field type="note" name="sociolinguistics" show="false">
       <label show="true">
         <translation lang="default">Sociolinguistics:</translation>
       </label>
@@ -930,9 +918,9 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="pronunciation" show="true">
+    <field type="pronunciation" show="true">
       <label show="false">
-        <translation lang="default"></translation>
+        <translation lang="default"/>
       </label>
       <field-feature name="before-item" value=""/>
       <field-feature name="after-item" value=""/>
@@ -941,7 +929,7 @@
       <field-move origin="in-senses" action="none"/>
       <field-move origin="after-senses" action="none"/>
     </field>
-    <field  type="relation" name="Antonym" show="true">
+    <field type="relation" name="Antonym" show="true">
       <label show="true">
         <translation lang="default">Antonym:</translation>
         <translation lang="cs">Antonymum:</translation>
@@ -950,7 +938,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="relation" name="antonymum" show="true">
+    <field type="relation" name="antonymum" show="true">
       <label show="true">
         <translation lang="default">Antonymum:</translation>
       </label>
@@ -958,7 +946,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="relation" name="Compare" show="true">
+    <field type="relation" name="Compare" show="true">
       <label show="true">
         <translation lang="default">Compare:</translation>
         <translation lang="cs">Srovnej:</translation>
@@ -967,7 +955,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="relation" name="Generic" show="true">
+    <field type="relation" name="Generic" show="true">
       <label show="true">
         <translation lang="default">Generic:</translation>
         <translation lang="cs">Obecný:</translation>
@@ -976,7 +964,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="relation" name="obecný" show="true">
+    <field type="relation" name="obecný" show="true">
       <label show="true">
         <translation lang="default">Obecný:</translation>
       </label>
@@ -984,7 +972,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="relation" name="Opposite Verb Genus" show="true">
+    <field type="relation" name="Opposite Verb Genus" show="true">
       <label show="true">
         <translation lang="default">Opposite Verb Genus:</translation>
         <translation lang="cs">Rodový protějšek:</translation>
@@ -993,7 +981,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="relation" name="ref" show="true">
+    <field type="relation" name="ref" show="true">
       <label show="true">
         <translation lang="default">See also:</translation>
         <translation lang="fr">Voir aussi :</translation>
@@ -1002,7 +990,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="relation" name="rodový protějšek " show="true">
+    <field type="relation" name="rodový protějšek " show="true">
       <label show="true">
         <translation lang="default">Rodový protějšek :</translation>
       </label>
@@ -1010,7 +998,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="relation" name="Specific" show="true">
+    <field type="relation" name="Specific" show="true">
       <label show="true">
         <translation lang="default">Specific:</translation>
         <translation lang="cs">Specifický:</translation>
@@ -1019,7 +1007,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="relation" name="specifický" show="true">
+    <field type="relation" name="specifický" show="true">
       <label show="true">
         <translation lang="default">Specific:</translation>
         <translation lang="cs">Specifický:</translation>
@@ -1031,7 +1019,7 @@
       <field-move origin="in-senses" action="none"/>
       <field-move origin="after-senses" action="none"/>
     </field>
-    <field  type="relation" name="srovnej" show="true">
+    <field type="relation" name="srovnej" show="true">
       <label show="true">
         <translation lang="default">Srovnej:</translation>
       </label>
@@ -1039,7 +1027,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="relation" name="synonyma" show="true">
+    <field type="relation" name="synonyma" show="true">
       <label show="true">
         <translation lang="default">Synonyma:</translation>
       </label>
@@ -1047,7 +1035,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="relation" name="Synonyms" show="true">
+    <field type="relation" name="Synonyms" show="true">
       <label show="true">
         <translation lang="default">Synonyms:</translation>
         <translation lang="cs">Synonyma:</translation>
@@ -1056,7 +1044,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="relation" name="varianta" show="true">
+    <field type="relation" name="varianta" show="true">
       <label show="false">
         <translation lang="default">Varianta:</translation>
       </label>
@@ -1067,7 +1055,7 @@
       <field-move origin="in-senses" action="none"/>
       <field-move origin="after-senses" action="none"/>
     </field>
-    <field  type="variant" name="(Default)" show="true">
+    <field type="variant" name="(Default)" show="true">
       <label show="false">
         <translation lang="default">var.:</translation>
         <translation lang="cs">var.:</translation>
@@ -1076,7 +1064,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="variant" name="Alternative light verb" show="true">
+    <field type="variant" name="Alternative light verb" show="true">
       <label show="true">
         <translation lang="default">Alternative light verb:</translation>
       </label>
@@ -1084,7 +1072,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="variant" name="Alternative Preposition" show="true">
+    <field type="variant" name="Alternative Preposition" show="true">
       <label show="true">
         <translation lang="default">Alternative Preposition:</translation>
       </label>
@@ -1092,7 +1080,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="variant" name="alternativní kategoriální sloveso" show="true">
+    <field type="variant" name="alternativní kategoriální sloveso" show="true">
       <label show="true">
         <translation lang="default">Alternativní kategoriální sloveso:</translation>
       </label>
@@ -1100,7 +1088,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="variant" name="Arabic plural" show="true">
+    <field type="variant" name="Arabic plural" show="true">
       <label show="true">
         <translation lang="default">Arabic plural:</translation>
         <translation lang="cs">Arabský plurál:</translation>
@@ -1109,7 +1097,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="variant" name="arabský komparativ, superlativ" show="true">
+    <field type="variant" name="arabský komparativ, superlativ" show="true">
       <label show="true">
         <translation lang="default">Arabský komparativ, superlativ:</translation>
       </label>
@@ -1117,7 +1105,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="variant" name="arabský plurál" show="true">
+    <field type="variant" name="arabský plurál" show="true">
       <label show="true">
         <translation lang="default">Arabský plurál:</translation>
       </label>
@@ -1125,7 +1113,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="variant" name="Colloquial" show="true">
+    <field type="variant" name="Colloquial" show="true">
       <label show="true">
         <translation lang="default">Colloquial:</translation>
         <translation lang="cs">Hovorová varianta:</translation>
@@ -1134,7 +1122,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="variant" name="hovorová varianta" show="true">
+    <field type="variant" name="hovorová varianta" show="true">
       <label show="true">
         <translation lang="default">Hovorová varianta:</translation>
       </label>
@@ -1142,7 +1130,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="variant" name="nespecifikovaná varianta" show="true">
+    <field type="variant" name="nespecifikovaná varianta" show="true">
       <label show="true">
         <translation lang="default">Nespecifikovaná varianta:</translation>
       </label>
@@ -1150,7 +1138,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="variant" name="Past" show="true">
+    <field type="variant" name="Past" show="true">
       <label show="true">
         <translation lang="default">Past:</translation>
       </label>
@@ -1158,7 +1146,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="variant" name="Plural" show="true">
+    <field type="variant" name="Plural" show="true">
       <label show="true">
         <translation lang="default">Plural:</translation>
         <translation lang="cs">Plurál:</translation>
@@ -1167,7 +1155,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="variant" name="plurál" show="true">
+    <field type="variant" name="plurál" show="true">
       <label show="true">
         <translation lang="default">Plural:</translation>
         <translation lang="cs">Plurál:</translation>
@@ -1179,7 +1167,7 @@
       <field-move origin="in-senses" action="none"/>
       <field-move origin="after-senses" action="none"/>
     </field>
-    <field  type="variant" name="pravopisná varianta" show="true">
+    <field type="variant" name="pravopisná varianta" show="true">
       <label show="true">
         <translation lang="default">Pravopisná varianta:</translation>
       </label>
@@ -1187,7 +1175,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="variant" name="Present" show="true">
+    <field type="variant" name="Present" show="true">
       <label show="true">
         <translation lang="default">Present:</translation>
         <translation lang="cs">Prézens:</translation>
@@ -1196,7 +1184,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="variant" name="prézentní kmen" show="true">
+    <field type="variant" name="prézentní kmen" show="true">
       <label show="true">
         <translation lang="default">Prézentní kmen:</translation>
       </label>
@@ -1204,7 +1192,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="variant" name="Spelling Variant" show="true">
+    <field type="variant" name="Spelling Variant" show="true">
       <label show="true">
         <translation lang="default">Spelling Variant:</translation>
         <translation lang="cs">Pravopisná varianta:</translation>
@@ -1213,7 +1201,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="variant" name="Unspecified Variant" show="true">
+    <field type="variant" name="Unspecified Variant" show="true">
       <label show="true">
         <translation lang="default">Unspecified Variant:</translation>
         <translation lang="cs">Nespecifikovaná varianta:</translation>
@@ -1222,7 +1210,7 @@
       <field-feature name="after-item" value=""/>
       <field-feature name="label-position" value="beside"/>
     </field>
-    <field  type="variant" name="zaměnitelná předložka" show="true">
+    <field type="variant" name="zaměnitelná předložka" show="true">
       <label show="true">
         <translation lang="default">Zaměnitelná předložka:</translation>
       </label>
@@ -1508,11 +1496,11 @@
     </translation-mapping>
     <translation-mapping id="Audio_Download_Connect">
       <translation lang="en">To download audio files, please connect to the internet.</translation>
-      <translation lang="fr">Pour télécharger les fichiers audio, veuillez vous connecter à l&apos;internet</translation>
+      <translation lang="fr">Pour télécharger les fichiers audio, veuillez vous connecter à l'internet</translation>
       <translation lang="es">Para descargar archivos de audio, favor  conectarse a internet</translation>
       <translation lang="pt">Para baixar arquivos de áudio, conecte-se à Internet.</translation>
       <translation lang="ru">Для загрузки аудио файлов, пожалуйста, подключитесь к интернету</translation>
-      <translation lang="uk">Щоб завантажити аудіо файли, будь ласка, під&apos;єднайтеся до інтернету</translation>
+      <translation lang="uk">Щоб завантажити аудіо файли, будь ласка, під'єднайтеся до інтернету</translation>
       <translation lang="zh">下载的音频文件，请连接到互联网。</translation>
       <translation lang="cs">Pro stažení audia se připojte k internetu.</translation>
     </translation-mapping>
@@ -1528,7 +1516,7 @@
     </translation-mapping>
     <translation-mapping id="Audio_Downloading">
       <translation lang="en">Downloading audio...</translation>
-      <translation lang="fr">Téléchargement de l&apos;audio...</translation>
+      <translation lang="fr">Téléchargement de l'audio...</translation>
       <translation lang="es">Descargando el audio...</translation>
       <translation lang="cs">Stahování audia…</translation>
     </translation-mapping>
@@ -1538,7 +1526,7 @@
       <translation lang="es">Por favor revise su conexión a Internet</translation>
       <translation lang="pt">Verifique a sua conexão com a Internet.</translation>
       <translation lang="ru">Пожалуйста, проверьте интернет-соединение</translation>
-      <translation lang="uk">Будь ласка, перевірте інтернет з&apos;єднання</translation>
+      <translation lang="uk">Будь ласка, перевірте інтернет з'єднання</translation>
       <translation lang="zh">请检查您的网络连接。</translation>
       <translation lang="cs">Zkontrolujte připojení k intenretu.</translation>
     </translation-mapping>
@@ -1685,7 +1673,7 @@
     </translation-mapping>
     <translation-mapping id="Settings_Layout_Direction_Interface_Language">
       <translation lang="en">Direction of interface language</translation>
-      <translation lang="fr">Direction de la langue de l&apos;interface</translation>
+      <translation lang="fr">Direction de la langue de l'interface</translation>
       <translation lang="id">Arah bahasa antarmuka</translation>
       <translation lang="es">Dirección del idioma de la interfaz</translation>
       <translation lang="cs">Směr jazyka uživatelského rozhraní</translation>
@@ -1699,7 +1687,7 @@
     </translation-mapping>
     <translation-mapping id="Settings_Keep_Screen_On">
       <translation lang="en">Keep screen on</translation>
-      <translation lang="fr">Garder l&apos;écran allumé</translation>
+      <translation lang="fr">Garder l'écran allumé</translation>
       <translation lang="es">Mantener la pantalla encendida</translation>
       <translation lang="pt">Manter a tela ligada</translation>
       <translation lang="cs">Zachovat zapnutou obrazovku</translation>
@@ -1710,7 +1698,7 @@
     </translation-mapping>
     <translation-mapping id="Share_Apk_File">
       <translation lang="en">Share App Installer File</translation>
-      <translation lang="fr">Partager fichier d&apos;installation de l&apos;appli</translation>
+      <translation lang="fr">Partager fichier d'installation de l'appli</translation>
       <translation lang="es">Compartir archivo del instalador de aplicacion</translation>
       <translation lang="pt">Compartilhar arquivo de instalação do aplicativo</translation>
       <translation lang="cs">Sdílet instalační soubor</translation>
@@ -1723,7 +1711,7 @@
     </translation-mapping>
     <translation-mapping id="Share_App_Link">
       <translation lang="en">Share Link to App on Google Play</translation>
-      <translation lang="fr">Partager lien à l&apos;appli sur Google Play</translation>
+      <translation lang="fr">Partager lien à l'appli sur Google Play</translation>
       <translation lang="es">Compartir enlace de la aplicación en Google Play</translation>
       <translation lang="pt">Compartilhar link para o aplicativo no Google Play</translation>
       <translation lang="cs">Sdílet odkaz na aplikaci v Google Play</translation>
@@ -1816,15 +1804,24 @@
       <translation lang="es">Comenzar</translation>
       <translation lang="cs">Start</translation>
     </translation-mapping>
+    <translation-mapping id="Button_No_Thanks">
+      <translation lang="en">No Thanks</translation>
+      <translation lang="fr">Non Merci</translation>
+      <translation lang="es">No Gracias</translation>
+      <translation lang="pt">Não Obrigado</translation>
+      <translation lang="ru">Нет спасибо</translation>
+      <translation lang="de">Nein Danke</translation>
+      <translation lang="cs">Ne, děkuju</translation>
+    </translation-mapping>
     <translation-mapping id="Button_Sign_Up">
       <translation lang="en">Sign Up</translation>
-      <translation lang="fr">S&apos;inscrire</translation>
+      <translation lang="fr">S'inscrire</translation>
       <translation lang="es">Inscríbete.</translation>
       <translation lang="cs">Přihlásit se</translation>
     </translation-mapping>
     <translation-mapping id="Share_Apk_Link">
       <translation lang="en">Share Link to App Installer File</translation>
-      <translation lang="fr">Partager le lien vers le fichier d&apos;installation de l&apos;appli</translation>
+      <translation lang="fr">Partager le lien vers le fichier d'installation de l'appli</translation>
       <translation lang="es">Compartir enlace al archivo del instalador de la aplicación</translation>
       <translation lang="pt">Compartilhar link para o Arquivo de Instalação do Aplicativo</translation>
       <translation lang="ru">Поделиться ссылкой на файл установщика приложения (.apk)</translation>
@@ -1835,7 +1832,7 @@
     </translation-mapping>
     <translation-mapping id="Download_APK">
       <translation lang="en">Download APK</translation>
-      <translation lang="fr">Télécharger l&apos;APK</translation>
+      <translation lang="fr">Télécharger l'APK</translation>
       <translation lang="es">Descargar APK</translation>
       <translation lang="pt">Baixar APK</translation>
       <translation lang="ru">Скачать APK</translation>
@@ -1995,7 +1992,7 @@
     </translation-mapping>
     <translation-mapping id="Security_Device_Id">
       <translation lang="en">Device ID</translation>
-      <translation lang="fr">ID de l&apos;appareil</translation>
+      <translation lang="fr">ID de l'appareil</translation>
       <translation lang="es">ID del aparato</translation>
       <translation lang="pt">ID do dispositivo</translation>
       <translation lang="cs">ID přístroje</translation>
@@ -2021,17 +2018,17 @@
     </translation-mapping>
     <translation-mapping id="User_Check_Internet">
       <translation lang="en">Please check that you have an internet connection, then press the button again to continue.</translation>
-      <translation lang="fr">Veuillez vérifier que vous disposez d&apos;une connexion Internet, puis appuyez à nouveau sur le bouton pour continuer.</translation>
+      <translation lang="fr">Veuillez vérifier que vous disposez d'une connexion Internet, puis appuyez à nouveau sur le bouton pour continuer.</translation>
       <translation lang="cs">Zkontrolujte, zda máte připojení k intenretu a zmáčkněte tlačítko pro pokračování.</translation>
     </translation-mapping>
     <translation-mapping id="User_Database_Sign_In_Error">
       <translation lang="en">Sorry, we were unable to sign in to the database server.</translation>
-      <translation lang="fr">Désolé, nous n&apos;avons pas pu nous connecter au serveur de la base de données.</translation>
+      <translation lang="fr">Désolé, nous n'avons pas pu nous connecter au serveur de la base de données.</translation>
       <translation lang="cs">Bohužel se nelze přihlásit k databázovému serveru.</translation>
     </translation-mapping>
     <translation-mapping id="User_Database_Add_User_Error">
       <translation lang="en">Sorry, we were unable to add this information to the online database.</translation>
-      <translation lang="fr">Désolé, nous n&apos;avons pas pu ajouter cette information à la base de données en ligne.</translation>
+      <translation lang="fr">Désolé, nous n'avons pas pu ajouter cette information à la base de données en ligne.</translation>
       <translation lang="cs">Bohužel nelze vložit tento údaj do on-line databáze.</translation>
     </translation-mapping>
     <translation-mapping id="Language_cs">
@@ -2050,6 +2047,9 @@
 
   <images type="illustration">
     <image width="2362" height="1384">ghesm-studna.jpg</image>
+    <image width="50" height="50">logo-cuni.png</image>
+    <image width="81" height="50">logo-sou.png</image>
+    <image width="52" height="50">logo-tacr.png</image>
   </images>
 
   <adaptive-icon>
