@@ -19,11 +19,7 @@
   <xsl:template match="text()[contains(., 'lift-to-tei\Dictionary')]" priority="2">
     <xsl:value-of select="replace(., 'V:\\Projekty\\Github\\Daliboris\\lediir\\lift-to-tei\\Dictionary\\', '/Users/boris/Documents/Dictionary/') => translate('\', '/')"/>
   </xsl:template>
-  
-  <xsl:template match="text()[contains(., 'Daliboris.keystore')]" priority="2">
-    <xsl:value-of select="'/Users/boris/Documents/Dictionary/Daliboris.keystore'"/>
-  </xsl:template>
-  
+
   <xsl:template match="text()[contains(., '\')]">
     <xsl:value-of select="translate(., '\', '/')"/>
   </xsl:template>
