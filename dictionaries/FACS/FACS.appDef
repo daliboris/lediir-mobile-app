@@ -8,12 +8,12 @@
   <app-name lang="en">Persian-Czech Mobile Dictionary</app-name>
   <apk-filename append-version="true">Persian-Czech_Dictionary.apk</apk-filename>
   <package>cz.cas.soc.eldi.dictionary.facs</package>
-  <version code="9" name="9.0"/>
+  <version code="0" name="0.0"/>
   <multiple-apks value="false"/>
   <android-sdk min="23"/>
   <install-location value="preferExternal"/>
   <ipa-filename append-version="true">Persian-Czech_Dictionary.ipa</ipa-filename>
-  <ipa-version build="9" name="9.0"/>
+  <ipa-version build="0" name="0.0"/>
   <ipa-asset-filename>Persian-Czech_Dictionary.zip</ipa-asset-filename>
   <ipa-container-url/>
   <ipa-app-type>dedicated</ipa-app-type>
