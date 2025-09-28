@@ -1,4 +1,4 @@
-<i>Persko-český mobilní slovník, verze %version-name%</i>
+<i>Persko-český mobilní slovník %target-level%, verze %version-name%</i>
 
 Autorský tým: 
 
