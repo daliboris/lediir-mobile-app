@@ -11,7 +11,7 @@
 	<p:option name="platform" select="'android'" values="('android', 'ios')" /> <!-- static="true"  -->
 	<p:option name="project-acronym" select="'LeDIIR'" /> <!-- static="true"  -->
 	<p:option name="dictionary-acronym" select="'FACS'" /> <!-- static="true"  -->
-	<p:option name="data-version" select="'2025-05-29'" /> <!-- static="true"  -->
+	<p:option name="data-version" select="'2025-09-28'" /> <!-- static="true"  -->
 <!--	<p:option name="test-version" select="'-sample'" static="true" />-->
 <!--	<p:option name="test-version" select="'-nonbreak'" static="true" />-->
 <!--	<p:option name="test-version" select="'-underscore'" static="true" /> -->
