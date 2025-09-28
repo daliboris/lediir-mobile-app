@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<app-definition type="DAB" program-version="11.0.3">
+<app-definition type="DAB" program-version="13.1">
   <project-name>Persian-Czech Dictionary</project-name>
   <project-description>Persko-český slovník, mobilní aplikace</project-description>
   <project-group>LeDIIR</project-group>
